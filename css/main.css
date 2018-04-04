@@ -1,0 +1,173 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/*Media queries*/
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 480px) {}
+
+/*Eriks starter css*/
+/*
+body {
+	cursor: url('doge.ico'), default;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+*{box-sizing: border-box;}*/
+
+/*typography styling here*/
+/*h1, h2, h3, h4, h5, p {font-family: 'Source Sans Pro', sans-serif;}
+h1 {}
+h2 {}
+h3 {font-size: 22px;}
+h4 {}
+h5 {}
+p {font-size: 16px;}
+a,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: #5000F1;
+}*/
+/*unique typography*/
+/*.huge a {font-size:100px; color:#fff; text-align: center;margin-top: 200px; display:block;}*/
+
+/*navigation here*/
+/*.nav ul {list-style-type:none;display:flex;}
+.nav li {display:block; width:120px;}*/
+
+
+/*structural units*/
+/*.header {height: 200px;*/
+/*  background:orange;*//*edit here */
+ /* clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 calc(100% - 5vw)
+  ); position:fixed;top:0px; left:0px; width:100%; z-index: 100; }*/
+
+/*.hero {margin-top:100px;background:pink; min-height:400px;}*/
+/*.row,.container {background: #fff;}*/
+/*#one, #two, #three, #four, #five, #six, #seven,#eight {height:100vh; border-bottom: thin dashed #333;padding-top: 200px;}*//*you can change this*/
+/*.cell{min-height: 100px; outline: thin grey solid;*//*outline for display*//*}*/
+
+
+/*parallax*/
+/*.lg-green {
+  width: 160px;
+  height: 160px;
+  background: #00F1C9;
+  border-radius: 12px;
+}*/
+
+/*transitions*/
+/*a.spin, a.swell, a.levitate {display: block; width:200px; height: 200px; background:yellow; border-radius: 4px;
+transition: all 1s ease;}
+a.spin:hover {transform:rotate(45deg);}
+a.swell:hover{transform:scale(1.5);}
+a.levitate:hover{transform:scale(1.1); -webkit-box-shadow: 0 0 20px 5px rgba(0,0,0,.5);
+	box-shadow: 0 0 20px 5px rgba(0,0,0,.5); }*/
+
+/*bg video*/
+/*video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(clouds.jpg) no-repeat;
+    background-size: cover; 
+}
+#video {height: 100vh;
+}*/
+
+
+/**
+ 
+ * css keyframe animation 
+ 
+ */
+/*#slide {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position :relative;*/
+    /*-webkit-animation: mymove 3s infinite;*/ /* Safari 4.0 - 8.0 */
+    /*animation: mymove 3s infinite;*/
+/*}*/
+
+/* Safari 4.0 - 8.0 */
+/*@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+}*/
+
+/* Standard syntax */
+/*@keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+}*/
+
+/*clippy*/
+/*#clippy {-webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);;
+background-image:url(../img/matterhorn.jpg);height:400px;}*/
+/*----------------------------------
+  Main
+------------------------------------*/
+
+/*----------------------------------
+  Medium devices
+------------------------------------*/
+
+/*@media (max-width: 1024px) {
+
+
+}
+*/
+
+
+/*----------------------------------
+  Phablets
+------------------------------------*/
+
+/*@media (max-width: 767px) {
+
+
+}*/
+
+
+/*----------------------------------
+Phones
+------------------------------------*/
+
+/*@media (max-width: 480px) {
+	
+}*/
+
+
+
+
+
