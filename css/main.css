@@ -1,3 +1,8 @@
+:root {
+    --main-red: #D73038;
+}
+
+
 * {
 	box-sizing: border-box;
 }
@@ -5,13 +10,44 @@
 html, body {
   	margin: 0;
   	padding: 0;
+    height: 100%;
+    width: 100%;
 }
 
 .container {
-	max-width: 1170px;
+	/*max-width: 1170px;*/
 	margin: auto;
+  width: 100%;
 }
 
+
+/*CTA SECTION*/
+
+#cta {
+  background-image: url("../images/cta-background.png");
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+}
+
+.h1.cta {
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 150px;
+  text-align: center;
+  
+}
+
+#cta-center {
+  height: 100%;
+}
+
+#tests {
+   display: flex; /* new */
+   align-items: center;  /* new */
+   justify-content: center;
+   width: 100%;
+}
 
 
 /*Media queries*/
