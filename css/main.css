@@ -17,6 +17,20 @@ html, body {
     width: 100%;
 }
 
+section {
+
+  float: left;
+
+  display: block;
+
+  height: 100%;
+
+  padding: 0;
+
+  margin: 0;
+
+}
+
 .container {
 	/*max-width: 1170px;*/
 	margin: auto;
@@ -24,14 +38,45 @@ html, body {
 }
 
 
+
 /*CTA SECTION*/
+
+
 
 #cta {
   background-image: url("../images/cta-background.png");
   height: 100%;
   background-position: center center;
   background-size: cover;
+ /* position: fixed; INFINITE SCROLL */ 
+
 }
+
+/*WANT TO USE THE INFINITE SCROLL*/
+
+/*.scroll
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}*/
+
+/*#section-section1 {
+bottom: 0;  
+width: 4500px;
+z-index: 2;
+}
+
+#section-section2 {
+  bottom: 0;  
+  width: 100%;
+  z-index: 1;
+
+}*/
+
+/*body {
+  overflow-x: hidden;
+}*/
 
 .h1.cta {
   color: white;
@@ -45,35 +90,51 @@ html, body {
   height: 100%;
 }
 
-#tests {
-   display: flex; /* new */
-   align-items: center;  /* new */
+/*#tests {
+   display: flex; 
+   align-items: center;  
    justify-content: center;
    width: 100%;
-}
+}*/
 
 /*SOLUTIONS SECTION*/
 
 #solutions {
   height: 100%;
   width: 100%;
+  border: 15px solid white;
+  /*position: fixed; */ 
 }
 
 #resources-center {
   height: 100%;
 }
 
-.cell.family {
+#family {
   background-color: var(--main-dark-blue);
   height: 100%;
+  display: flex;
+
 }
 
-.cell.political {
+#political {
   background-color: var(--light-pink);
-}
+  height: 100%;
+  display: flex;
 
-.cell.financial {
-  background-color: var(--main-blue)
+}
+ #financial {
+  background-color: var(--main-blue);
+  height: 100%;
+  display: flex;
+ }
+
+.h3.solutions-headers {
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 90px;
 }
 
 
