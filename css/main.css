@@ -1,5 +1,8 @@
 :root {
     --main-red: #D73038;
+    --main-dark-blue: #152E46;
+    --light-pink: #F0C6C5;
+    --main-blue: #2C60A5;
 }
 
 
@@ -47,6 +50,30 @@ html, body {
    align-items: center;  /* new */
    justify-content: center;
    width: 100%;
+}
+
+/*SOLUTIONS SECTION*/
+
+#solutions {
+  height: 100%;
+  width: 100%;
+}
+
+#resources-center {
+  height: 100%;
+}
+
+.cell.family {
+  background-color: var(--main-dark-blue);
+  height: 100%;
+}
+
+.cell.political {
+  background-color: var(--light-pink);
+}
+
+.cell.financial {
+  background-color: var(--main-blue)
 }
 
 
