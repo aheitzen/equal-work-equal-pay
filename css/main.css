@@ -449,17 +449,12 @@ video {
   flex-direction: column;
 
 }
-.card {
+/*.card {
   height: 403px;
   width: 100%;
   background-color: var(--main-red);
   margin-top: 5.5em;
-   /* display: flex;
-    justify-content: center;
-    align-items: center;
-    -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;*/
-}
+}*/
 
 .history-card-headers {
   color: var(--main-dark-blue);
@@ -497,6 +492,7 @@ svg.svg-inline--fa.fa-circle.fa-w-16 {
 
 .flip-container {
   perspective: 1000px;
+  margin-bottom: 80px;
 }
 
 .flip-container:hover .flipper, .flip-container.hover .flipper {
