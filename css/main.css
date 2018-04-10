@@ -512,7 +512,6 @@ svg.svg-inline--fa.fa-circle.fa-w-16 {
 
 .front, .back {
   backface-visibility: hidden;
-  background-color: var(--main-red);
   position: absolute;
   top: 0;
   left: 0;
@@ -525,6 +524,18 @@ svg.svg-inline--fa.fa-circle.fa-w-16 {
 
 .back {
   transform: rotateY(180deg);
+}
+
+.history-card-yellow {
+  background-color: #E6A827;
+}
+
+.history-card-red {
+  background-color: var(--main-red);
+}
+
+.history-card-pink {
+  background-color: var(--light-pink);
 }
 
 /*CTA SECTION*/
