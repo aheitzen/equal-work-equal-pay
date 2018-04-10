@@ -2,7 +2,7 @@ console.log("I work");
 
 new WOW().init();
 
-$("#card").flip();
+// $("#card").flip();
 
 $(document).ready(function() {
 	$(".card").flip({
@@ -10,6 +10,12 @@ $(document).ready(function() {
   	trigger: 'hover'
 	});
 });
+
+$(".card").flip({
+  axis: 'x',
+  trigger: 'hover'
+});
+
 
 
 
