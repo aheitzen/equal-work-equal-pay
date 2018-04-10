@@ -432,7 +432,44 @@ video {
 }*/
 
 
+/*HISTORY SECTION*/
 
+.history-header {
+  text-align: center;
+  font-family: 'Fjalla One', sans-serif;
+  color: var(--main-dark-blue);
+  text-transform: uppercase;
+  font-size: 100px;
+}
+
+#card {
+  height: 403px;
+  width: 100%;
+  background-color: var(--main-red);
+  margin-top: 5.5em;
+   /* display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;*/
+}
+
+.history-card-headers {
+  color: var(--main-dark-blue);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 100pt;
+  text-align: center;
+}
+
+svg.svg-inline--fa.fa-certificate.fa-w-16 {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  color: var(--main-blue);
+  font-size: 70px;
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
 
 /*CTA SECTION*/
 
