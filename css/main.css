@@ -17,18 +17,250 @@ html, body {
     width: 100%;
 }
 
+/*HILARY'S CODE*/
+#definition {
+    background-image: url(../images/background1.png);
+  height:1900px;
+    width: auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top:25vh;
+}
+
+.row.earn {
+    padding-top:30vh;
+}
+
+.dollars {
+    padding-top: 40vh;   
+}
+
+h1.define {
+    font-size: 230px;
+    color:white; 
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    line-height: 230px;
+}
+
+h2.define {
+    font-size: 40px;
+    color:white; 
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    line-height: 65px;
+}
+
+h1.nearly {
+    font-size: 200px;
+    color:white; 
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    line-height: 220px;
+}
+
+h1#dollar {
+    font-size:100px;
+    color:white; 
+    font-family: 'Fjalla One', sans-serif;
+    text-align: left;
+    line-height: 130px
+}
+
+/* why you should care section*/
+
+#why-should-you-care {
+    background-color: #cd3135;
+    height:700px;
+    width: auto;
+    background-size: 100%;
+    padding-top: 20vh;
+    
+}
+#inequality {   
+    padding-top: 15vh;
+    background-color:#e4a627;
+    height:400px;
+    
+}
+
+#economic {
+    padding-top: 10vh;
+    background-color:#e6bdba;
+    padding-bottom: 10vh;
+}
+
+h1.care{
+    font-size: 200px;
+    color:white; 
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    line-height: 230px;
+}
+
+h2.care {
+    font-size: 40px;
+    color:#132c43;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: left;
+}
+
+h1.economic { 
+    font-size: 80px;
+    color:#ce2f31;
+    font-family: 'Josefin Sans', bold, sans-serif;
+    text-align: left;
+    font-weight:bold;
+}
+
+h2.economic {
+   font-size: 30px;
+    color:#132c43;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: left;
+    line-height: 30px;
+}
+
+/* Contemporary Figures*/
+
+.figuretitle{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    background-color: #132c43;
+}
+
+.lilly {
+    background-color:#e6bdba;
+    padding-bottom: 10vh;
+}
+
+.letitia {
+    background-color:#ce2f31;
+    padding-bottom: 10vh;
+}
+
+.claudia {
+    background-color: #132c43;;
+    padding-bottom: 10vh;
+}
+
+#lils {
+    width:90%
+}
+
+h1.figuretitle{
+      font-size: 150px;
+    color:white; 
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    line-height: 230px;
+}
+
+h1.leaderlil {
+    font-size: 80px;
+    color: #ce2f31;
+    font-family: 'Fjalla One', sans-serif;
+    text-align: left;
+    line-height: 230px;
+}
+
+#let {
+    width:90%
+}
+
+h2.leader-info
+{
+    font-size: 25px;
+    color:#132c43;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: left;
+    line-height: 30px;
+}
+
+
+h1.leaderlet {
+    font-size: 80px;
+    color: #132c43;
+    font-family: 'Fjalla One', sans-serif;
+    text-align: left;
+    line-height: 230px;
+}
+
+h1.leaderclaud {
+    font-size: 80px;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    text-align: left;
+    line-height: 230px;
+}
+    
+h2.leader-claudia
+{
+    font-size: 25px;
+    color:white;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: left;
+    line-height: 30px;
+}
+
+/*CTA section*/
+
+.afford {
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+     background-color:white;
+}
+
+.pay {
+    background-color: #e4a627;
+    height: 539px;
+}
+
+h2.cta {
+    font-size: 50px;
+    color: #ce2f31;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    line-height:60px;
+}
+
+h1.equal {
+     font-size: 150px;
+    color:white; 
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    line-height: 230px;
+}
+
+.claudia {
+    background-color: #132c43;;
+    padding-bottom: 10vh;
+}
+h1.leaderclaud {
+    font-size: 80px;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    text-align: left;
+    line-height: 230px;
+}
+    
+h2.leader-claudia
+{
+    font-size: 25px;
+    color:white;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: left;
+    line-height: 30px;
+}
+
+/*END OF HILLARY CODE*/
+
 section {
-
   float: left;
-
   display: block;
-
   height: 100%;
-
   padding: 0;
-
   margin: 0;
-
 }
 
 .container {
@@ -36,6 +268,169 @@ section {
 	margin: auto;
   width: 100%;
 }
+
+/*TITLE SECTION*/
+
+#title {
+  height: 100%;
+  width: 100%;
+  /*background-color: var(--main-red);*/
+}
+
+.title-header {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 9em;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    /*-webkit-text-fill-color: transparent;*/
+
+}
+
+.test {
+    background: rgba(0,0,0,.8);
+    border: 5px solid #fff;
+    border-radius: 10px;
+    color: white;
+    padding: 6em 20px 20px;
+    position:absolute;
+/*float:left;*/
+    width:640px;
+    min-height:370px;
+    background-color:#000;
+    z-index:300000;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+#video_overlays {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color:#000;
+}
+
+
+
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 500000;
+}
+
+/*.wrapper {
+    text-align: center;
+}*/
+
+/*.title {
+    font-size: 2em;
+    position: relative;
+    margin: 0 auto 1em;
+    padding: 1em 1em .25em 1em;
+    text-align: center;
+    text-transform: uppercase;
+}*/
+/*.title:after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 240px;
+    height: 4px;
+    margin-left: -120px;
+    content: '';
+    background-color: #fff;
+}*/
+
+/* Clip text element */
+/*.clip-text {
+    font-size: 10.5em;
+    font-weight: bold;
+    line-height: 1;
+    position: relative;
+    display: inline-block;
+    margin: .25em;
+    padding: .5em .75em;
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;*/
+    /* Color fallback */
+/*    color: #fff;
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}*/
+
+/*.clip-text:before,
+.clip-text:after {
+    position: absolute;
+    content: '';
+}*/
+
+/* Background */
+/*.clip-text:before {
+    z-index: -2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: inherit;
+}
+*/
+/* Text Background (black zone) */
+/*.clip-text:after {
+    position: absolute;
+    z-index: -1;
+    top: .125em;
+    right: .125em;
+    bottom: .125em;
+    left: .125em;
+    background-color: #000;
+}*/
+
+/* Change the background position to display letter when the black zone isn't here */
+/*.clip-text--no-textzone:before {
+    background-position: -.65em 0;
+}
+
+.clip-text--no-textzone:after {
+    content: none;
+}*/
+
+/* Use Background-size cover for photo background and no-repeat background */
+/*.clip-text--cover,
+.clip-text--cover:before {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.clip-text_one {
+    background-image: url(http://cdn8.staztic.com/app/a/6278/6278761/hd-abstract-wallpapers-1-0-s-307x512.jpg);
+}*/
+
+video {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  /*z-index: 1;*/
+  
+}
+
+.no-padding {
+  padding: 0;
+}
+/*
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}*/
+
 
 
 
@@ -48,6 +443,7 @@ section {
   height: 100%;
   background-position: center center;
   background-size: cover;
+  /*position: absolute;*/
  /* position: fixed; INFINITE SCROLL */ 
 
 }
@@ -103,7 +499,8 @@ z-index: 2;
   height: 100%;
   width: 100%;
   border: 15px solid white;
-  /*position: fixed; */ 
+  /*position: fixed;  */
+  /*position: absolute;*/
 }
 
 #resources-center {
@@ -124,6 +521,11 @@ z-index: 2;
   height: 100%;
   display: flex;
   flex-direction: column;
+}
+
+#political:hover {
+  width: 5100px;
+
 }
  #financial {
   background-color: var(--main-blue);
@@ -147,6 +549,25 @@ z-index: 2;
   margin-top: 35px;
   font-size: 25px;
   text-transform: uppercase;
+}
+
+/*FOOTER SECTION*/
+
+#footer {
+  background-color: red;
+  /*height: 10%;*/
+}
+
+.footer-header {
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.footer-sub-header {
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
 }
 
 
@@ -309,6 +730,17 @@ Phones
 }*/
 
 
+/*.parent-div {
+  position: relative;
+}
 
+video {
+  position: relative;
+}
 
+#image {
+  background-color: black;
+  position: absolute;
+}
+*/
 

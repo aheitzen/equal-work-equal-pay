@@ -10,6 +10,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Josefin+Sans" rel="stylesheet">
 	<link href="images/favicon.ico" rel="icon" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="css/thimble.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullpage.min.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/jInvertScroll.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -17,18 +18,85 @@
 <body>
 	<div class="container" id="title">
 		<div class="row">
-			<div class="cell">
-				
-			</div>
+			<div class="cell no-padding">
+				<div class="wrapper">
+					<div id="video_overlays"></div>
+			    	<video playsinline autoplay muted poster=""> 
+						<source src="images/test-img.mp4" type="video/mp4">  
+					</video>
+					<h1 class="centered title-header">EQUAL PAY<br> EQUAL WORK</h1>
+				</div>
+  			</div>
 		</div>
 	</div>
-	<div class="container" id="definition">
+	<!-- <div class="container" id="title">
 		<div class="row">
 			<div class="cell">
-				
+				<div class="parent-div">
+					<video playsinline autoplay muted poster=""> 
+						<source src="images/test-img.mp4" type="video/mp4">  
+					</video>
+					<div id="image"></div>
+				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
+	<div class="container" id="definition">
+        <div class="row justify-start">
+            <div class="cell six">
+                <h2 class="define"> Women make up almost</h2>
+            </div>
+            <div class="cell six"></div>
+        </div>
+        <div class="row">
+            <div class="cell twelve wow slideInLeft" data-wow-duration="2s">
+                <h1 class="define">1/2</h1>
+            </div>
+        </div>
+        <div class="row justify-start wow slideInRight" data-wow-duration="2s" data-wow-delay="1s">
+            <div class="cell six">
+            </div>
+            <div class="cell six">
+                <h2 class="define"> of the U.S. workforce </h2>
+            </div>
+        </div>
+
+        <div class="row earn">
+            <div class="cell six"> </div>
+            <div class="cell 6">
+                <h2 class="define">Full time working women make</h2>
+            </div>
+            <div class="row">
+                <div class="cell twelve wow fadeIn">
+                    <h1 class="define">80.5 CENTS</h1>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="cell six">
+                    <h2 class="define">for every dollar earned by men</h2>
+                </div>
+                <div class="cell six"></div>
+            </div>
+
+        </div>
+
+        <div class="row dollars">
+            <div class="cell nine">
+                <h2 class="define">Women, on average, earn less than men</h2>
+                <div class="cell three"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell two"></div>
+            <div class="cell ten">
+                <h1 id="dollar"> IN NEARLY </h1>
+                <h1 id="dollar">EVERY SINGLE</h1>
+                <h1 id="dollar">OCCUPATION</h1>
+            </div>
+        </div>
+
+    </div>
 	<div class="container" id="history">
 		<div class="row">
 			<div class="cell">
@@ -36,22 +104,113 @@
 			</div>
 		</div>
 	</div>
-	<div class="container" id="why-should-you-care">
-		<div class="row">
-			<div class="cell">
-				
-			</div>
-		</div>
-	</div>
-	<div class="container" id="contemporary-figures">
-		<div class="row">
-			<div class="cell">
-				
-			</div>
-		</div>
-	</div>
-	<section data-role="section" id="section-section1">  <!-- class="scroll" -->
-	<div class="container" id="cta">
+	<div class="container">
+        <div class="row" id="why-should-you-care">
+            <div class="cell 12 wow zoomIn " data-wow-duration="3s">
+                <h1 class="care"> WHY YOU SHOULD CARE</h1>
+            </div>
+        </div>
+        <div class="row" id="inequality">
+            <div class="cell two"></div>
+            <div class="cell eight">
+                <h2 class="care"> PERSISTENT PAY INEQUALITY CAN HAVE FAR-REACHING ECONOMIC CONSEQUENCES.</h2>
+            </div>
+        </div>
+        <div class="row" id="economic">
+            <div class="cell one"></div>
+            <div class="cell seven"><h2 class="economic"> Equal pay would cut poverty among working women and their families by</h2>
+            </div>
+            <div class="cell four"></div>
+            <div class="cell two"></div>
+            <div class="cell ten"><h1 class="economic">MORE THAN 1/2</h1></div>
+             <div class="cell four"></div>
+            <div class="cell four"><h2 class="economic">AND ADD</h2></div>
+             <div class="cell four"></div>
+            <div class="cell four"></div>
+            <div class="cell eight"><h1 class="economic">	$513 BILLION</h1></div>
+             <div class="cell seven"></div>
+            <div class="cell five"><h2 class="economic">to the national economy</h2></div>
+            
+        </div>
+    </div>
+	 <div class="container" id="contemporary-figures">
+        <div class="row figuretitle">
+            <div class="cell 12">
+                <h1 class="figuretitle">
+                CONTEMPORARY LEADERS
+                </h1>
+
+            </div>
+        </div>
+        <div class="row lilly"> 
+           <div class="cell one">
+            </div>  
+         <div class="cell six"><h1 class="leaderlil"> LILLY LEDBETTER</h1>
+            </div>
+             <div class="cell five">
+            </div>
+             <div class="cell one">
+            </div>
+            <div class="cell six"> <h2 class="leader-info">For 10 years, Lilly Ledbetter fought to close the gap between women’s and men’s wages, sparring with the Supreme Court, lobbying Capitol Hill in a historic discrimination case.Ledbetter won a jury verdict of more than $3 million after having filed a gender pay discrimination suit in federal court, but the U.S. Supreme Court later overturned the lower court’s ruling. Despite her defeat Ledbetter continued her fight until the Supreme Court decision was nullified when President Obama, on January 29, 2009, signed into law the first new law of his administration: the Lilly Ledbetter Fair Pay Act. </h2></div>
+              <div class="cell five">
+                  <img id="lils" src="images/lilli.png">
+            </div>
+        </div>
+        
+         <div class="row letitia"> 
+             <div class="cell five"></div>
+             <div class="cell six"><h1 class="leaderlet"> LETITIA JAMES </h1> </div>
+             <div class="cell one">
+            </div>  
+             <div class="cell five">
+             <img id="let" src="images/letitia.png"> 
+             </div>
+             <div class="cell six"> <h2 class="leader-info">Letitia James is an American lawyer, activist, and politician in the Democratic Party She is the current and fourth New York City Public Advocate and first African American woman to hold citywide office.The New York City Council voted to pass Public Advocate Letitia James’ groundbreaking legislation to ban employers from asking job applicants for previous salary information, a practice that perpetuates a cycle of wage discrimination. The bill, which will impact approximately 3.8 million workers, will prohibit public and private employers from requesting salary history information.</h2> </div>
+               <div class="cell one">
+            </div>
+             
+        
+           <div class="row claudia">
+                 <div class="cell one">
+            </div>
+            <div class="cell six">
+                <h1 class="leaderclaud"> CLAUDIA GOLDIN</h1>
+            </div>
+            <div class="cell five">
+            </div>
+            <div class="cell one">
+            </div>
+            <div class="cell six">
+                <h2 class="leader-claudia">Claudia Goldin is an economist at Harvard University. She's a former president of the American Economic Association and a leading researcher on the gender wage gap. She is the author of the highly influential book, Understanding the Gender Gap, which challenged conventional wisdom about the root causes of unequal pay between the sexes. </h2>
+            </div>
+            <div class="cell five">
+                <img id="lils" src="images/caludia.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="cta">
+        <div class="row afford">
+            <div class="cell 12">
+                <h2 class="cta"> WE CAN’T AFFORD </h2>
+                <h2 class="cta">TO WAIT THIS LONG</h2>
+            </div>
+        </div>
+        <div class="row pay">
+            <div class="cell 12">
+                <h1 class="equal">
+                    EQUAL PAY
+                </h1>
+                <h2 class="cta"> FOR</h2>
+                <h1 class="equal">
+                    EQUAL WORK
+                </h1>
+
+            </div>
+        </div>
+    </div>
+	<!-- <section data-role="section" id="section-section1">  <!-- class="scroll" -->
+	<!-- <div class="container" id="cta">
 		<div class="row justify-center" id="cta-center">
 			<div class="cell align-bottom twelve">
 				<h1 class="h1 cta">YOU CAN</h1>
@@ -61,9 +220,9 @@
 			</div>
 		</div>
 	</div>
-	</section>
-	<section data-role="section" id="section-section2"> <!-- class="scroll" -->
-	<div class="container" id="solutions">
+	</section> -->
+	<!-- <section data-role="section" id="section-section2"> --> <!-- class="scroll" -->
+	<!-- <div class="container" id="solutions">
 		<div class="row" id="resources-center">
 			<div class="cell justify-center" id="family">
 				<h3 class="h3 align-center solutions-headers">familial</h3><br>
@@ -79,7 +238,7 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 	<!-- <div class="container" id="solutions">
 		<div class="row">
 			<div class="cell">
@@ -96,13 +255,17 @@
 			</div>
 		</div>
 	</div>
-	<div class="container" id="footer">
+
+	<!-- <div class="container" id="footer">
 		<div class="row">
 			<div class="cell">
-				
+				<h5 class="h5 footer-header">Crafted in Seattle, WA</h5>
+				<h5 class="h5 footer-header">Proudly designed and built by</h5>
+				<h6 class="h6 footer-sub-header">Hilary Painter<a href="" target="blank"></a></h6>
+				<h6 class="h6 footer-sub-header">Alexa Heitzenrader<a href="alexaheitzenrader.com" target="blank"></a></h6>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/wow.min.js"></script>
@@ -113,6 +276,8 @@
 <script type="text/javascript" src="js/jquery.horizonScroll.js"></script>
 <script type="text/javascript" src="js/jquery.touchSwipe.js"></script>
 <!-- <script type="text/javascript" src="js/mouse-wheel.js"></script> -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+<script type="text/javascript" src="js/jquery.fullpage.min.js"></script>
 <script type="text/javascript" src="js/rellax.js"></script>
 <script type="text/javascript" src="js/jquery.jInvertScroll.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
