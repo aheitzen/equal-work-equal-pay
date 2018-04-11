@@ -255,13 +255,13 @@ h2.leader-claudia
 
 /*END OF HILLARY CODE*/
 
-section {
+/*section {
   float: left;
   display: block;
   height: 100%;
   padding: 0;
   margin: 0;
-}
+}*/
 
 .container {
 	/*max-width: 1170px;*/
@@ -541,9 +541,10 @@ svg.svg-inline--fa.fa-circle.fa-w-16 {
 #cta {
   background-image: url("../images/cta-background.png");
   height: 100%;
+  width: 100%;
   background-position: center center;
   background-size: cover;
-  /*position: absolute;*/
+  /*position: relative;*/
  /* position: fixed; INFINITE SCROLL */ 
 
 }
@@ -614,8 +615,6 @@ z-index: 2;
   flex-direction: column;
 }
 
-
-
 #political {
   background-color: var(--light-pink);
   height: 100%;
@@ -654,7 +653,7 @@ z-index: 2;
 /*FOOTER SECTION*/
 
 #footer {
-  background-color: red;
+  background-color: var(--main-dark-blue);
   /*height: 10%;*/
 }
 
@@ -662,13 +661,95 @@ z-index: 2;
   font-family: 'Josefin Sans', sans-serif;
   color: white;
   text-align: center;
+  margin-top: 5px;
+  margin-left: 30px;
 }
 
 .footer-sub-header {
   color: white;
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
+  margin-top: 4px;
+  margin-bottom: 8px;
 }
+
+.footer-amp {
+  text-align: center;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  margin-left: 10px;
+}
+
+#alexa {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#crafted-seattle {
+  margin-top: 15px;
+}
+
+.footer-links:hover {
+  color: var(--main-red);
+}
+
+
+svg.svg-inline--fa.fa-hand-paper.fa-w-14 {
+    visibility: hidden;
+    font-size: 16px;
+}
+
+.footer-header:hover svg.svg-inline--fa.fa-hand-paper.fa-w-14 {
+  visibility: visible;
+  font-size: 16px;
+}
+
+svg.svg-inline--fa.fa-hand-paper.fa-w-14 {
+  animation-name: shake;
+  -webkit-animation: shake 0.5s alternate infinite; 
+    -moz-animation: shake 0.5s alternate infinite; 
+    animation: shake 0.5s alternate infinite; 
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+
+@keyframes shake {
+  0% {-webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+  100% {-webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg);}
+}
+
+svg.svg-inline--fa.fa-thumbs-up.fa-w-16 {
+  visibility: hidden;
+  font-size: 14px;
+}
+
+.footer-header:hover svg.svg-inline--fa.fa-thumbs-up.fa-w-16 {
+  visibility: visible;
+  font-size: 14px;
+}
+
+svg.svg-inline--fa.fa-thumbs-up.fa-w-16 {
+  animation-name: flash;
+  animation: flash .50s infinite alternate;
+}
+
+@keyframes flash {
+  to { transform: scale(1.2); }
+}
+
+
+
 
 
 /*Media queries*/
