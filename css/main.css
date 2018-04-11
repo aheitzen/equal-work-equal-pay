@@ -431,6 +431,10 @@ video {
 
 /*HISTORY SECTION*/
 
+#history {
+  position: relative;
+}
+
 .history-header {
   text-align: center;
   font-family: 'Fjalla One', sans-serif;
@@ -522,6 +526,12 @@ svg.svg-inline--fa.fa-circle.fa-w-16 {
 
 .history-card-pink {
   background-color: var(--light-pink);
+}
+
+#particles-js {
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 /*CTA SECTION*/
