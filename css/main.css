@@ -17,10 +17,53 @@ html, body {
     width: 100%;
 }
 
+body {
+        background: #111;
+        margin: 0;
+        padding: 0;
+      }
+
+    ::-webkit-scrollbar {
+        width: 1px;
+        height: 1px;
+      }
+
+      ::-webkit-scrollbar-button {
+        width: 1px;
+        height: 1px;
+      }
+     .container-chocobo {
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+        background: #abc;
+        display: box;
+          display: -webkit-box;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+
+      .item {
+        height: 100vh;
+        width: 100vw;
+        display: block;
+        background: #cab;
+      }
+
+      .vertical {
+        overflox-y: auto;
+        overflow-x: hidden;
+      }
+
+      .vertical .item {
+        transform: translateY(0);
+        transform-origin: right top;
+      }
+
 /*HILARY'S CODE*/
 #definition {
     background-image: url(../images/background1.png);
-  height:1900px;
+  height: 1986px;
     width: auto;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -300,24 +343,24 @@ h2.leader-claudia
     z-index:300000;
 }
 
-.wrapper {
+/*.wrapper {
     text-align: center;
-}
+}*/
 
-#video_overlays {
+/*#video_overlays {
   position: absolute;
   height: 100%;
   width: 100%;
   background-color:#000;
-}
+}*/
 
-.centered {
+/*.centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 500000;
-}
+}*/
 
 /*.wrapper {
     text-align: center;
@@ -534,6 +577,46 @@ svg.svg-inline--fa.fa-circle.fa-w-16 {
   position: absolute;
 }
 
+/*STATES MAP SECTION*/
+
+#state-map {
+  height: 100%;
+  width: 100%;
+  background-color: red;
+}
+
+/* On mouse hover, lighten state color */
+path:hover {
+  fill-opacity: .7;
+}
+
+/* Style for Custom Tooltip */
+div.tooltip {   
+  position: absolute;           
+  text-align: center;           
+  width: 60px;                  
+  height: 28px;                 
+  padding: 2px;             
+  font: 12px sans-serif;        
+  background: white;   
+  border: 0px;      
+  border-radius: 8px;           
+  pointer-events: none;         
+}
+        
+/* Legend Font Style */
+body {
+  font: 11px sans-serif;
+}
+        
+/* Legend Position Style */
+.legend {
+  position:absolute;
+  left:800px;
+  top:350px;
+}
+
+
 /*CTA SECTION*/
 
 
@@ -703,6 +786,7 @@ svg.svg-inline--fa.fa-hand-paper.fa-w-14 {
 .footer-header:hover svg.svg-inline--fa.fa-hand-paper.fa-w-14 {
   visibility: visible;
   font-size: 16px;
+  color: var(--light-pink);
 }
 
 svg.svg-inline--fa.fa-hand-paper.fa-w-14 {
@@ -737,6 +821,7 @@ svg.svg-inline--fa.fa-thumbs-up.fa-w-16 {
 .footer-header:hover svg.svg-inline--fa.fa-thumbs-up.fa-w-16 {
   visibility: visible;
   font-size: 14px;
+  color: var(--light-pink);
 }
 
 svg.svg-inline--fa.fa-thumbs-up.fa-w-16 {
