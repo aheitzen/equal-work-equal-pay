@@ -730,11 +730,70 @@ div.tooltip {
   text-transform: uppercase;
 }
 
-/*FOOTER SECTION
+/*FOOTER SECTION*/
+
+.resources-header {
+
+}
 
 #footer {
+  background-color: var(--light-pink);
+  height: 100%;
+}
+
+/*#footer-credits {
+  height: 10%;
   background-color: var(--main-dark-blue);
-  /*height: 10%;*/
+}*/
+
+#containerCircle {
+ margin: 20px;
+  width: 200px;
+  height: 200px;
+
+}
+#containerCircle1 {
+ margin: 20px;
+  width: 200px;
+  height: 200px;
+
+}
+.ocupation-stats-section {
+  color: var(--light-pink);
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 230px;
+  margin-left: 50px;
+  text-transform: uppercase;
+}
+
+.ocupation-sub-header {
+  color: #e6a827;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  margin-left: 50px;
+  font-size: 70px;
+}
+
+#glass {
+  margin-top: 20px;
+}
+
+.glass-elevator-paragraph-intro {
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 20px;
+  /*margin-left: 200px;*/
+   margin-left: 50px;
+  margin-right: 290px;
+  white-space: normal;
+  margin-top: 30px;
+
+}
+
+#radial-graphs {
+  background-color: var(--main-dark-blue);
+  height: 100%;
+  width: 100%;
 }
 
 .footer-header {
