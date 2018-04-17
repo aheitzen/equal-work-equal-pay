@@ -625,6 +625,91 @@ div.tooltip {
   white-space: normal;
 }
 
+#nav {
+  position: fixed;
+  z-index: 3;
+}
+
+#nav-hamburger {
+  float: right;
+  color: white;
+  margin-right: 40px;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(19, 44, 67, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 60px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover:first-child: {
+  color: var(--main-red);
+}
+
+.overlay a:hover:nth-child(2) {
+  color: #e6a827;
+}
+
+.overlay a:hover:nth-child(3) {
+  color: var(--light-pink);
+}
+
+.overlay a:hover:nth-child(4) {
+  color: var(--main-blue);
+}
+
+.overlay a:hover:last-child {
+  color: #e6a827;
+}
+
+.nav-links {
+  color: var(--main-red);
+  font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: var(--main-red);
+}
+
+.overlay .closebtn {
+    position: absolute;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
 /*.fuck-box {
   height: 20px;
   width: 20px;
