@@ -7,18 +7,23 @@
 
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html, body {
-  	margin: 0;
-  	padding: 0;
+    margin: 0;
+    padding: 0;
     height: 100%;
     width: 100%;
 }
 
-body {
-  overflow-x: hidden;
+section {
+  width: 100%;
+  height: 100%;
+  display: box;
+  display: -webkit-box;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 /*HILARY'S CODE*/
@@ -259,17 +264,19 @@ h2.leader-claudia
 
 /*END OF HILLARY CODE*/
 
-section {
+/*section {
   float: left;
   display: block;
   height: 100%;
   padding: 0;
   margin: 0;
-}
+}*/
 
 .container {
-	/*max-width: 1170px;*/
-	margin: auto;
+  /*max-width: 1170px;*/
+  box-sizing: border-box;
+  display: block;
+  margin: auto;
   width: 100%;
 }
 
@@ -278,15 +285,14 @@ section {
 #title {
   height: 100%;
   width: 100%;
-  /*background-color: var(--main-red);*/
+  /*position: fixed; */ 
+  background-color: var(--main-red);
 }
 
 .title-header {
     font-family: 'Fjalla One', sans-serif;
     font-size: 9em;
-    text-fill-color: transparent;
-    -webkit-background-clip: text;
-    /*-webkit-text-fill-color: transparent;*/
+  
 
 }
 
@@ -435,9 +441,7 @@ div.tooltip {
 }
         
 /* Legend Font Style */
-body {
-  font: 11px sans-serif;
-}
+
         
 /* Legend Position Style */
 .legend {
@@ -457,7 +461,7 @@ body {
   width: 100%;
   background-position: center center;
   background-size: cover;
-  position: fixed;  
+  /*position: fixed; */ 
 
 }
 
@@ -470,20 +474,24 @@ body {
     left: 0;
 }*/
 
-#section-section1 {
-  /*position: fixed;*/
+/*#section-section1 {
   bottom: 0;  
-  width: 2900px;  /*4500*/
+  width: 2900px;  
   z-index: 2;
 }
 
 #section-section2 {
-  /*position: fixed;*/
-   bottom: 0;  
-  width: 100%;
-  z-index: 1;
+    bottom: 0;  
+    width: 100%;
+    z-index: 1;
 }
 
+#section-section4 {
+    bottom: 0;  
+    width: 3000px;
+    z-index: 3;
+}
+*/
 /*.horizon
 {
   z-index: 1;
@@ -523,7 +531,7 @@ body {
   height: 100%;
   width: 100%;
   /*border: 15px solid white;*/
-  position: fixed;  
+  /*position: fixed; */ 
   /*position: absolute;*/
 }
 
@@ -689,7 +697,7 @@ svg.svg-inline--fa.fa-thumbs-up.fa-w-16 {
 /*Eriks starter css*/
 /*
 body {
-	cursor: url('doge.ico'), default;
+  cursor: url('doge.ico'), default;
 }
 html, body {
   margin: 0;
@@ -750,7 +758,7 @@ transition: all 1s ease;}
 a.spin:hover {transform:rotate(45deg);}
 a.swell:hover{transform:scale(1.5);}
 a.levitate:hover{transform:scale(1.1); -webkit-box-shadow: 0 0 20px 5px rgba(0,0,0,.5);
-	box-shadow: 0 0 20px 5px rgba(0,0,0,.5); }*/
+  box-shadow: 0 0 20px 5px rgba(0,0,0,.5); }*/
 
 /*bg video*/
 /*video#bgvid { 
@@ -833,7 +841,7 @@ Phones
 ------------------------------------*/
 
 /*@media (max-width: 480px) {
-	
+  
 }*/
 
 
