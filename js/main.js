@@ -19,10 +19,22 @@ $(document).ready(function() {
   $( "#political" ).hover(
   function() {
     $( "#political-sub-head-hover" ).css( "display", "none" );
-    $( ".showText" ).css( "display", "block" );
-  }, function() {
+    // $( ".showText" ).css( "display", "block" );
+    $(".showText").css({
+      "display": "block",
+      "animation": "fadein 1s"
+    });
+    $("#political-header-hover").css({
+      "margin-bottom": "3vh",
+      "transition": "ease-out .5s"
+    });
+    }, function() {
     $( "#political-sub-head-hover" ).css( "display", "block" );
     $( ".showText" ).css( "display", "none" );
+    $("#political-header-hover").css({
+      "margin-bottom": "0vh",
+      "transition": "ease-out .5s"
+    });
   }
 );
 });

@@ -556,7 +556,7 @@ div.tooltip {
   height: 100%;
   display: flex;
   flex-direction: column;
-  transition: all .25s ease-in-out;
+  transition: all .25s linear;
 }
 
 #political:hover {
@@ -564,6 +564,19 @@ div.tooltip {
   cursor: pointer;
   color: black;
 }
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/*#political-header-hover {
+  transition: all .25s linear;
+}*/
+
+/*#political-header-hover:hover {
+  transform: scaleX(3);
+}*/
 
  #financial {
   background-color: var(--main-blue);
@@ -584,7 +597,7 @@ div.tooltip {
   display: none;
   color: white;
   font-family: 'Fjalla One', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   margin-left: 50px;
   margin-right: 50px;
   white-space: normal;
