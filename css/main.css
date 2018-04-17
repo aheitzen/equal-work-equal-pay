@@ -582,7 +582,26 @@ div.tooltip {
 
 .showText {
   display: none;
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 14px;
+  margin-left: 50px;
+  margin-right: 50px;
+  white-space: normal;
+
+
 }
+
+/*.fuck-box {
+  height: 20px;
+  width: 20px;
+  word-wrap: break-word;
+  white-space: nowrap;
+  overflow: hidden;
+  o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+
+}*/
 
 .h4.solutions-subheads {
   text-align: center;
