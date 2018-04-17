@@ -15,25 +15,18 @@ $(document).ready(function() {
 
     });
   });
+
+  $( "#political" ).hover(
+  function() {
+    $( "#political-sub-head-hover" ).css( "display", "none" );
+    $( ".showText" ).css( "display", "block" );
+  }, function() {
+    $( "#political-sub-head-hover" ).css( "display", "block" );
+    $( ".showText" ).css( "display", "none" );
+  }
+);
 });
 
 
 
 
-// $('section').horizon(
-//  {
-//     scrollTimeout: null,
-//     scrollEndDelay: 250,
-//     scrollDuration: 400,
-//     i: 0,
-//     limit: 0,
-//     docWidth: 0,
-//     sections: null,
-//     swipe: true,
-//     fnCallback: function (i) {}
-// });
-
-
-// $.jInvertScroll(['.scroll']);
-
-// $.jInvertScroll(['section-section1', 'section-section2']);
