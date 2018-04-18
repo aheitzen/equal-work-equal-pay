@@ -86,39 +86,61 @@ function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
 
-var bar = new ProgressBar.Circle(containerCircle, {
-  color: '#FFEA82',
-  trailColor: '#eee',
+var settings = {
+  color: '#d02f31',
+  trailColor: '#e8bfbc',
   trailWidth: 1,
   duration: 1400,
   easing: 'bounce',
   strokeWidth: 6,
-  from: {color: '#FFEA82', a:0},
-  to: {color: '#ED6A5A', a:1},
+  from: {color: '#d02f31', a:0},
+  to: {color: '#e6a827', a:1},
   // Set default step function for all animate calls
   step: function(state, circle) {
     circle.path.setAttribute('stroke', state.color);
+    circle.setText("$" + Math.round(circle.value()* 61) + "k");
   }
-});
+}
 
-bar.animate(1.0);
+let settings2 = Object.assign({}, settings);
+settings2.duration = 1800;
+// settings2.step = function(state, circle) {
+//     circle.path.setAttribute('stroke', state.color);
+//     circle.setText(Math.round(circle.value()* 51100));
+//   }
 
-var bar = new ProgressBar.Circle(containerCircle1, {
-  color: '#FFEA82',
-  trailColor: '#eee',
-  trailWidth: 1,
-  duration: 1400,
-  easing: 'bounce',
-  strokeWidth: 6,
-  from: {color: '#FFEA82', a:0},
-  to: {color: '#ED6A5A', a:1},
-  // Set default step function for all animate calls
-  step: function(state, circle) {
-    circle.path.setAttribute('stroke', state.color);
+let bar = new ProgressBar.Circle(containerCircle, settings);
+let bar2 = new ProgressBar.Circle(containerCircle1, settings2);
+
+
+let fill = 1;
+let fill2 = 0.841;
+
+bar.animate(fill);
+bar2.animate(fill2);
+
+let interval = setInterval(() => {
+  if (fill === 1) {
+    fill = 0;
+    fill2 = 0;
+  } else {
+    fill = 1;
+    fill2 = 0.841;
   }
-});
 
-bar.animate(1.0);
+  bar.animate(fill);
+  bar2.animate(fill2);
+}, 4000);
+
+bar.text.style.fontFamily = '"Josefin Sans", sans-serif';
+bar.text.style.fontSize = '2rem';
+
+bar2.text.style.fontFamily = '"Josefin Sans", sans-serif';
+bar2.text.style.fontSize = '2rem';
+
+
+
+
 
 
 
