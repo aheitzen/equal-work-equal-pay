@@ -772,26 +772,38 @@ div.tooltip {
   text-transform: uppercase;
   margin-left: 50px;
   font-size: 70px;
+  margin-left: 105px;
 }
 
 .radial-graph-header-nurse {
    color: white;
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
-  margin-left: 50px;
+  margin-left: 20px;
   font-size: 20px;
-  text-align: center;
+  /*text-align: center;*/
    margin-top: 20px;
+}
+
+#men {
+   color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  margin-left: 110px;
+  font-size: 20px;
+  /*text-align: center;*/
+   margin-top: 70px;
+
 }
 
 .radial-graph-sub-header-nurse {
   color: white;
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
-  margin-left: 50px;
+  margin-left: 93px;
   font-size: 20px;
-  text-align: center;
-   margin-top: 20px;
+  /*text-align: center;*/
+   margin-top: 70px;
 }
 
 #line-graph {
@@ -829,6 +841,7 @@ div.tooltip {
 
 #glass {
   margin-top: 20px;
+  margin-left: 100px;
 }
 
 .glass-elevator-paragraph-intro {
@@ -836,8 +849,8 @@ div.tooltip {
   font-family: 'Fjalla One', sans-serif;
   font-size: 20px;
   /*margin-left: 200px;*/
-   margin-left: 50px;
-  margin-right: 290px;
+   margin-left: 110px;
+  margin-right: 150px;
   white-space: normal;
   margin-top: 30px;
 
