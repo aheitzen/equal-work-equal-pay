@@ -748,13 +748,13 @@ div.tooltip {
 
 #containerCircle {
  margin: 20px;
-  width: 200px;
+  width: 230px;
   height: 200px;
 
 }
 #containerCircle1 {
  margin: 20px;
-  width: 200px;
+  width: 230px;
   height: 200px;
 
 }
@@ -772,6 +772,26 @@ div.tooltip {
   text-transform: uppercase;
   margin-left: 50px;
   font-size: 70px;
+}
+
+.radial-graph-header-nurse {
+   color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  margin-left: 50px;
+  font-size: 20px;
+  text-align: center;
+   margin-top: 20px;
+}
+
+.radial-graph-sub-header-nurse {
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  margin-left: 50px;
+  font-size: 20px;
+  text-align: center;
+   margin-top: 20px;
 }
 
 #glass {
