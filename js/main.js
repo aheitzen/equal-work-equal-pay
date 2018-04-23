@@ -1,4 +1,6 @@
-new WOW().init();
+new WOW({
+  scrollContainer: 'section'
+}).init();
 
 
 $(document).ready(function() {
