@@ -285,7 +285,7 @@ h2.leader-claudia
 #title {
   height: 100%;
   width: 100%;
-  background-image: url("../images/test.png");
+  background-image: url("../images/bleh1.png");
   /*background-color: var(--main-red);*/
   z-index: 1;
 }
@@ -316,6 +316,7 @@ video {
 
 #history {
   position: relative;
+  width: 300%;
 }
 
 .history-header {
@@ -353,6 +354,7 @@ p.paragraph-history-text {
   margin-left: 70px;
   color: white;
   font-family: 'Josefin Sans', sans-serif;
+  white-space: normal;
 }
 /*REPLACE WITH ICONS EVENTUALLY*/
 svg.svg-inline--fa.fa-circle.fa-w-16 {

@@ -104,14 +104,9 @@ var settings = {
 
 let settings2 = Object.assign({}, settings);
 settings2.duration = 1800;
-// settings2.step = function(state, circle) {
-//     circle.path.setAttribute('stroke', state.color);
-//     circle.setText(Math.round(circle.value()* 51100));
-//   }
 
 let bar = new ProgressBar.Circle(containerCircle, settings);
 let bar2 = new ProgressBar.Circle(containerCircle1, settings2);
-
 
 let fill = 1;
 let fill2 = 0.841;
