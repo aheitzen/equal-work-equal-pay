@@ -29,8 +29,8 @@ section {
 /*HILARY'S CODE*/
 #definition {
     background-image: url(../images/background1.png);
-  /*height: 1986px;*/
-    width: auto;
+
+    width: 300%;
     background-size: 100%;
     background-repeat: no-repeat;
     padding-top:25vh;
