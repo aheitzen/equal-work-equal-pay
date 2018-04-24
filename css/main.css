@@ -15,6 +15,7 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
+     cursor: url(../images/cursor-10.png),  auto;
 }
 
 section {
@@ -26,7 +27,87 @@ section {
   white-space: nowrap;
 }
 
+
+
 /*HILARY'S CODE*/
+
+#race {
+margin:auto;
+width: 100%;
+padding-top:10vh;
+background-color: #296099;
+padding-bottom:10vh;
+}
+#poc {
+    padding-bottom: 8vh;
+}
+#racestat{
+    padding-top: 10vh;
+}
+#fiftysix {
+    padding-top: 5vh;
+}
+h2.race {
+   font-size: 30px;
+    color:white;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: left;
+    line-height: 30px;
+}
+h1.race{
+    color:#132c43;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: left;
+    line-height: 230px;
+    display: flex;
+   align-content: center;
+    
+}
+a.growing {
+    transition: all 1s ease-out;
+    font-size: 200px;
+}
+a.growing:hover {
+    font-size: 250px;
+}
+#raceStat {
+    
+  margin: 0px;
+  width: 400px;
+  height: 8px;
+  position: relative;
+margin-bottom: 40px;
+}
+#raceStat2 {
+    
+  margin: 0px;
+  width: 400px;
+  height: 8px;
+  position: relative;
+}
+#raceStat3 {
+    
+  margin: 0px;
+  width: 400px;
+  height: 8px;
+  position: relative;
+  margin-bottom: 40px;
+  
+}
+#raceStat4 {
+    
+  margin: 0px;
+  width: 400px;
+  height: 8px;
+  position: relative;
+}
+.progress {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10vh;
+    
+    
+}
 #definition {
     background-image: url(../images/background1.png);
 
@@ -132,37 +213,44 @@ h2.economic {
 
 /* Contemporary Figures*/
 
-.figuretitle{
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    background-color: #132c43;
+#contemporary-figures {
+  /*width: 400%;*/
 }
 
-.lilly {
-    background-color:#e6bdba;
-    padding-bottom: 10vh;
+.figuretitle{
+    /*padding-top: 10vh;*/
+    /*padding-bottom: 10vh;*/
+    background-color: #132c43;
+
+    /*position: fixed;*/
 }
+
+#lily {
+    background-color:#e6bdba;
+    /*padding-bottom: 10vh;*/
+  }
 
 .letitia {
     background-color:#ce2f31;
-    padding-bottom: 10vh;
+    /*padding-bottom: 10vh;*/
 }
 
 .claudia {
     background-color: #132c43;;
-    padding-bottom: 10vh;
+    /*padding-bottom: 10vh;*/
 }
 
 #lils {
-    width:90%
+    width: 90%;
+    margin-top: -140px;
+    margin-left: 50px;
 }
 
 h1.figuretitle{
-      font-size: 150px;
+      font-size: 117px;
     color:white; 
     font-family: 'Fjalla One', sans-serif;
     text-align: center;
-    line-height: 230px;
 }
 
 h1.leaderlil {
@@ -184,6 +272,7 @@ h2.leader-info
     font-family: 'Josefin Sans', sans-serif;
     text-align: left;
     line-height: 30px;
+    white-space: normal;
 }
 
 
@@ -210,6 +299,12 @@ h2.leader-claudia
     font-family: 'Josefin Sans', sans-serif;
     text-align: left;
     line-height: 30px;
+}
+
+#contemporary-leaders-section {
+  background-color: var(--main-dark-blue);
+  display: flex;
+  /*flex-direction: column;*/
 }
 
 /*CTA section*/

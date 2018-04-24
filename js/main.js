@@ -135,15 +135,4 @@ bar.text.style.fontSize = '2rem';
 bar2.text.style.fontFamily = '"Josefin Sans", sans-serif';
 bar2.text.style.fontSize = '2rem';
 
-
-
-
-
-
-
-
-
-
-
-
-
+// HILARY JS
