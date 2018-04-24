@@ -229,7 +229,7 @@ h2.economic {
 }
 
 #lily {
-    background-color:#e6bdba;
+    background-color: #e6bdba;
     /*padding-bottom: 10vh;*/
   }
 
@@ -238,8 +238,8 @@ h2.economic {
     /*padding-bottom: 10vh;*/
 }
 
-.claudia {
-    background-color: #132c43;;
+#claudia {
+    background-color: #e6bdba;
     /*padding-bottom: 10vh;*/
 }
 
@@ -334,7 +334,7 @@ h2.leader-claudia
 
 h2.cta {
     font-size: 50px;
-    color: #ce2f31;
+    color: #e6a827;
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
     line-height:60px;
@@ -348,9 +348,9 @@ h1.equal {
     line-height: 230px;
 }
 
-#claudia {
-    background-color: #132c43;;
-}
+/*#claudia {
+    background-color: #132c43;
+}*/
 
 h1.leaderclaud {
     font-size: 80px;
@@ -633,6 +633,27 @@ div.tooltip {
   
 }
 
+#cta-two {
+  background-color: #d73038;
+}
+
+#clock-image {
+  height: 100%;
+  width: 50%;
+}
+
+#cta-one {
+  background-color: var(--main-dark-blue);
+
+}
+.cta-text-one {
+  color: white;
+  font-size: 50px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  line-height: 60px;
+}
+
 #cta-center {
   height: 100%;
 }
@@ -654,14 +675,14 @@ div.tooltip {
 }
 
 #family {
-  background-color: var(--main-dark-blue);
+  background-color: #e8bfbc;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
 
 #political {
-  background-color: var(--light-pink);
+  background-color: var(--main-dark-blue);
   height: 100%;
   display: flex;
   flex-direction: column;
