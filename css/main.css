@@ -215,6 +215,9 @@ h2.economic {
 
 #contemporary-figures {
   /*width: 400%;*/
+  background-color: var(--main-dark-blue);
+  height: 100%;
+  /*width: 40%;*/
 }
 
 .figuretitle{
@@ -230,7 +233,7 @@ h2.economic {
     /*padding-bottom: 10vh;*/
   }
 
-.letitia {
+#letitia {
     background-color:#ce2f31;
     /*padding-bottom: 10vh;*/
 }
@@ -262,7 +265,9 @@ h1.leaderlil {
 }
 
 #let {
-    width:90%
+    width:90%;
+    margin-top: -140px;
+    margin-left: 50px;
 }
 
 h2.leader-info
@@ -302,8 +307,8 @@ h2.leader-claudia
 }
 
 #contemporary-leaders-section {
-  background-color: var(--main-dark-blue);
-  display: flex;
+  /*background-color: var(--main-dark-blue);*/
+/*  display: flex;*/
   /*flex-direction: column;*/
 }
 
