@@ -265,9 +265,15 @@ h1.leaderlil {
 }
 
 #let {
-    width:90%;
+    width: 90%;
     margin-top: -140px;
     margin-left: 50px;
+}
+
+#claud {
+  margin-top: -140px;
+  margin-left: 50px;
+  width:90%;
 }
 
 h2.leader-info
@@ -304,6 +310,7 @@ h2.leader-claudia
     font-family: 'Josefin Sans', sans-serif;
     text-align: left;
     line-height: 30px;
+    white-space: normal;
 }
 
 #contemporary-leaders-section {
@@ -341,10 +348,10 @@ h1.equal {
     line-height: 230px;
 }
 
-.claudia {
+#claudia {
     background-color: #132c43;;
-    padding-bottom: 10vh;
 }
+
 h1.leaderclaud {
     font-size: 80px;
     color: white;
