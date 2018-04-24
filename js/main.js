@@ -90,7 +90,7 @@ function closeNav() {
 
 var settings = {
   color: '#d02f31',
-  trailColor: '#e8bfbc',
+  trailColor: 'white',
   trailWidth: 1,
   duration: 1400,
   easing: 'bounce',
