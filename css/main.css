@@ -424,6 +424,7 @@ video {
 #history {
   position: relative;
   width: 300%;
+  background-color: #e3bab7;
 }
 
 .history-header {
