@@ -387,6 +387,7 @@ h2.leader-claudia
   width: 100%;
 }
 
+
 /*TITLE SECTION*/
 
 #title {
@@ -417,6 +418,7 @@ video {
   margin: 0;
   z-index: -1;
   position: relative;
+  filter: grayscale(100%);
 }
 
 .no-padding {
@@ -429,6 +431,9 @@ video {
   position: relative;
   width: 300%;
   background-color: #e3bab7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .history-header {
@@ -439,6 +444,11 @@ video {
   font-size: 130px;
   margin-bottom: 80px;
   margin-top: 80px;
+}
+
+.history-timeline-icons {
+  width: 20%;
+  margin: 0 auto;
 }
 
 .history-center {
@@ -522,7 +532,7 @@ svg.svg-inline--fa.fa-circle.fa-w-16 {
 }
 
 .history-card-pink {
-  background-color: var(--light-pink);
+  background-color: var(--main-blue);
 }
 
 #particles-js {
