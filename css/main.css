@@ -110,7 +110,7 @@ margin-bottom: 40px;
 }
 #definition {
     background-image: url(../images/Background-small.png);
-    margin-left: -68px;
+    /*margin-left: -68px;*/
     width: 300%;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -394,6 +394,8 @@ h2.leader-claudia
   width: 100%;
   /*background-image: url("../images/bleh1.png");*/
   background-image: url("../images/ewep.png");
+  background-position: center center;
+    background-size: cover;
   /*background-repeat: no-repeat;*/
   /*background-color: var(--main-red);*/
   z-index: 1;
