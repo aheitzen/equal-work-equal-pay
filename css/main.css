@@ -36,7 +36,7 @@ margin:auto;
 width: 100%;
 padding-top:10vh;
 background-color: #296099;
-padding-bottom:10vh;
+padding-bottom:40vh;
 }
 #poc {
     padding-bottom: 8vh;
@@ -53,6 +53,7 @@ h2.race {
     font-family: 'Josefin Sans', sans-serif;
     text-align: left;
     line-height: 30px;
+    white-space: normal;
 }
 h1.race{
     color:#132c43;
@@ -600,7 +601,7 @@ div.tooltip {
 
 
 #cta {
-  background-image: url("../images/cta-background.png");
+  background-image: url("../images/cta-background-multi.png");
   height: 100%;
   width: 100%;
   background-position: center center;
@@ -757,7 +758,7 @@ div.tooltip {
 .showText {
   display: none;
   color: white;
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
   margin-left: 50px;
   margin-right: 50px;
@@ -769,7 +770,7 @@ div.tooltip {
 .showTextFinancial {
   display: none;
   color: white;
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
   margin-left: 50px;
   margin-right: 50px;
@@ -779,7 +780,7 @@ div.tooltip {
 .showTextFamily {
   display: none;
   color: white;
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
   margin-left: 50px;
   margin-right: 50px;
@@ -1026,6 +1027,64 @@ div.tooltip {
   background-position: center center;
     background-size: cover;
 }
+
+/*H CODE RESOURCES*/
+
+#resources {
+    background-color: #e1a327;
+}
+.row.resource {
+     margin-bottom:-150px;
+     z-index:2;
+     position: relative;
+}
+h1.resource-header {
+    font-size: 100px;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    line-height: 130px;
+}
+h2.links {
+    font-size: 20px;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    line-height: 50px;
+}
+h2.links:hover {
+    font-size: 30px;
+    color: #ce2f31;
+}
+.row.picket {
+     z-index:1
+}
+#picket {
+   
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    animation: MoveUpDown 2s ease-in infinite;
+    margin-top: -100px;
+}
+@keyframes MoveUpDown {
+    0% {
+        transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+        transform: translate(-5px, -5px) rotateX(3deg) rotateY(3deg);
+    }
+    100% {
+        transform: translate(0px, 0px) rotateX(0deg) rotateY(0deg);
+    }
+}
+.no {
+    padding: 0px;
+}
+
 
 .footer-header {
   font-family: 'Josefin Sans', sans-serif;
