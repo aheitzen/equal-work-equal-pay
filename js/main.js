@@ -2,7 +2,6 @@ new WOW({
   scrollContainer: 'section'
 }).init();
 
-
 $(document).ready(function() {
   particlesJS.load('particles-js', 'assets/particles.json', function() {
     console.log('callback - particles.js config loaded');
@@ -107,32 +106,218 @@ var settings = {
 let settings2 = Object.assign({}, settings);
 settings2.duration = 1800;
 
-let bar = new ProgressBar.Circle(containerCircle, settings);
-let bar2 = new ProgressBar.Circle(containerCircle1, settings2);
+let settings3 = Object.assign({}, settings);
+settings3.duration = 3000;
 
-let fill = 1;
-let fill2 = 0.841;
+let settings4 = Object.assign({}, settings);
+settings4.duration = 5000;
 
-bar.animate(fill);
-bar2.animate(fill2);
+let bar6 = new ProgressBar.Circle(containerCircle, settings);
+let bar7 = new ProgressBar.Circle(containerCircle1, settings2);
+let bar8 = new ProgressBar.Circle(containerCircle3, settings3);
+let bar9 = new ProgressBar.Circle(containerCircle4, settings4);
+
+let fill6 = 1;
+let fill7 = 0.841;
+
+let fill8 = 1;
+let fill9 = 0.50;
+
+bar6.animate(fill6);
+bar7.animate(fill7);
+bar8.animate(fill8);
+bar9.animate(fill9);
 
 let interval = setInterval(() => {
+  if (fill6 === 1) {
+    fill6 = 0;
+    fill7 = 0;
+  } else {
+    fill6 = 1;
+    fill7 = 0.841;
+  }
+  bar6.animate(fill6);
+  bar7.animate(fill7);
+}, 4000);
+
+let interval2 = setInterval(() => {
+  if (fill8 === 1) {
+    fill8 = 0;
+    fill9 = 0;
+  } else {
+    fill8 = 1;
+    fill9 = 0.50;
+  }
+  bar8.animate(fill8);
+  bar9.animate(fill9);
+}, 4000);
+
+bar6.text.style.fontFamily = '"Josefin Sans", sans-serif';
+bar6.text.style.fontSize = '2rem';
+
+bar7.text.style.fontFamily = '"Josefin Sans", sans-serif';
+bar7.text.style.fontSize = '2rem';
+
+bar8.text.style.fontFamily = '"Josefin Sans", sans-serif';
+bar8.text.style.fontSize = '2rem';
+
+bar9.text.style.fontFamily = '"Josefin Sans", sans-serif';
+bar9.text.style.fontSize = '2rem';
+
+var ctx = document.getElementById("myChart"); 
+
+
+
+// HILARY JS
+
+var bar = new ProgressBar.Line(raceStat, {
+  strokeWidth: 20,
+  easing: 'easeInOut',
+  duration: 1400,
+  color: '#132c43',
+  trailColor: '#eee',
+  trailWidth: 1,
+  svgStyle: {width: '100%', height: '100%'},
+  text: {
+    style: {
+      // Text color.
+      // Default: same as stroke color (options.color)
+      color: 'white',
+      position: 'absolute',
+      right: '0',
+      top: '30px',
+      padding: 0,
+      margin: 0,
+      transform: null
+    },
+    autoStyleContainer: false
+  },
+  from: {color: '#132c43'},
+  to: {color: '#ED6A5A'},
+  step: (state, bar) => {
+    bar.setText(Math.round(bar.value() * 100) + ' %');
+  }
+});
+
+let fill = 1;
+bar.animate(1.0);  
+
+
+//bar 2//
+var bar2 = new ProgressBar.Line(raceStat2, {
+  strokeWidth: 20,
+  easing: 'easeInOut',
+  duration: 1400,
+  color: '#132c43',
+  trailColor: '#eee',
+  trailWidth: 1,
+  svgStyle: {width: '100%', height: '100%'},
+  text: {
+    style: {
+      // Text color.
+      // Default: same as stroke color (options.color)
+      color: 'white',
+      position: 'absolute',
+      right: '0',
+      top: '30px',
+      padding: 0,
+      margin: 0,
+      transform: null
+    },
+    autoStyleContainer: false
+  },
+  from: {color: '#132c43'},
+  to: {color: '#ED6A5A'},
+  step: (state, bar) => {
+    bar.setText(Math.round(bar.value() * 100) + ' %');
+  }
+});
+let fill2=.56;
+bar2.animate (fill2); 
+
+let interval3 = setInterval(() => {
   if (fill === 1) {
     fill = 0;
     fill2 = 0;
   } else {
     fill = 1;
-    fill2 = 0.841;
+    fill2 = 0.56;
   }
-
   bar.animate(fill);
   bar2.animate(fill2);
 }, 4000);
 
-bar.text.style.fontFamily = '"Josefin Sans", sans-serif';
-bar.text.style.fontSize = '2rem';
+//bar 3//
+var bar3 = new ProgressBar.Line(raceStat3, {
+  strokeWidth: 20,
+  easing: 'easeInOut',
+  duration: 1400,
+  color: '#132c43',
+  trailColor: '#eee',
+  trailWidth: 1,
+  svgStyle: {width: '100%', height: '100%'},
+  text: {
+    style: {
+      // Text color.
+      // Default: same as stroke color (options.color)
+      color: 'white',
+      position: 'absolute',
+      right: '0',
+      top: '30px',
+      padding: 0,
+      margin: 0,
+      transform: null
+    },
+    autoStyleContainer: false
+  },
+  from: {color: '#132c43'},
+  to: {color: '#ED6A5A'},
+  step: (state, bar) => {
+    bar.setText(Math.round(bar.value() * 100) + ' %');
+  }
+});
+fill3 = 1;
+bar3.animate (1.0);  // Number from 0.0 to 1.0
+//bar 4//
+var bar4 = new ProgressBar.Line(raceStat4, {
+  strokeWidth: 20,
+  easing: 'easeInOut',
+  duration: 1400,
+  color: '#132c43',
+  trailColor: '#eee',
+  trailWidth: 1,
+  svgStyle: {width: '100%', height: '100%'},
+  text: {
+    style: {
+      // Text color.
+      // Default: same as stroke color (options.color)
+      color: 'white',
+      position: 'absolute',
+      right: '0',
+      top: '30px',
+      padding: 0,
+      margin: 0,
+      transform: null
+    },
+    autoStyleContainer: false
+  },
+  from: {color: '#132c43'},
+  to: {color: '#ED6A5A'},
+  step: (state, bar) => {
+    bar.setText(Math.round(bar.value() * 100) + ' %');
+  }
+});
+let fill4 = .64;
+bar4.animate (fill4);  // Number from 0.0 to 1.0
 
-bar2.text.style.fontFamily = '"Josefin Sans", sans-serif';
-bar2.text.style.fontSize = '2rem';
-
-// HILARY JS
+let interval4 = setInterval(() => {
+  if (fill3 === 1) {
+    fill3 = 0;
+    fill4 = 0;
+  } else {
+    fill3 = 1;
+    fill4 = 0.64;
+  }
+  bar3.animate(fill3);
+  bar4.animate(fill4);
+}, 4000);
