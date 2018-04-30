@@ -172,6 +172,8 @@ settings6.step = function(state, circle) {
 let settings7 = Object.assign({}, settings);
 settings7.duration = 1400;
 settings7.color = '#ffffff';
+settings7.from.color = "#F0C6C5";
+settings7.to.color = "#152E46";
 settings7.step = function(state, circle) {
   circle.path.setAttribute('stroke', state.color);
   circle.setText("$" + Math.round(circle.value()* 1670));
@@ -185,14 +187,32 @@ settings8.step = function(state, circle) {
   circle.setText("$" + Math.round(circle.value()* 1670));
 }
 
+let settings9 = Object.assign({}, settings);
+settings9.duration = 1400;
+settings9.color = '#ffffff';
+settings9.step = function(state, circle) {
+  circle.path.setAttribute('stroke', state.color);
+  circle.setText("$" + Math.round(circle.value()* 1331));
+}
+
+let settings10 = Object.assign({}, settings);
+settings10.duration = 1800;
+settings10.color = '#ffffff';
+settings10.step = function(state, circle) {
+  circle.path.setAttribute('stroke', state.color);
+  circle.setText("$" + Math.round(circle.value()* 1331));
+}
+
 let bar6 = new ProgressBar.Circle(containerCircle, settings);
 let bar7 = new ProgressBar.Circle(containerCircle1, settings2);
-let bar8 = new ProgressBar.Circle(containerCircle3, settings3);
-let bar9 = new ProgressBar.Circle(containerCircle4, settings4);
-let bar10 = new ProgressBar.Circle(containerCircle5, settings5);
-let bar11 = new ProgressBar.Circle(containerCircle6, settings6);
-let bar12 = new ProgressBar.Circle(containerCircle7, settings7);
-let bar13 = new ProgressBar.Circle(containerCircle8, settings8);
+let bar8 = new ProgressBar.SemiCircle(containerCircle3, settings3);
+let bar9 = new ProgressBar.SemiCircle(containerCircle4, settings4);
+let bar10 = new ProgressBar.SemiCircle(containerCircle5, settings5);
+let bar11 = new ProgressBar.SemiCircle(containerCircle6, settings6);
+let bar12 = new ProgressBar.SemiCircle(containerCircle7, settings7);
+let bar13 = new ProgressBar.SemiCircle(containerCircle8, settings8);
+let bar14 = new ProgressBar.SemiCircle(containerCircle9, settings9);
+let bar15 = new ProgressBar.SemiCircle(containerCircle10, settings10);
 
 
 let fill6 = 1;
@@ -207,6 +227,9 @@ let fill11 = .66;
 let fill12 = 1;
 let fill13 = .69;
 
+let fill14 = 1;
+let fill15 = .70;
+
 bar6.animate(fill6);
 bar7.animate(fill7);
 bar8.animate(fill8);
@@ -215,6 +238,8 @@ bar10.animate(fill10);
 bar11.animate(fill11);
 bar12.animate(fill12);
 bar13.animate(fill13);
+bar14.animate(fill14);
+bar15.animate(fill15);
 
 let interval = setInterval(() => {
   if (fill6 === 1) {
@@ -264,6 +289,18 @@ let interval6 = setInterval(() => {
   bar13.animate(fill13);
 }, 4000);
 
+let interval7 = setInterval(() => {
+  if (fill14 === 1) {
+    fill14 = 0;
+    fill15 = 0;
+  } else {
+    fill14 = 1;
+    fill15 = 0.70;
+  }
+  bar14.animate(fill14);
+  bar15.animate(fill15);
+}, 4000);
+
 bar6.text.style.fontFamily = '"Josefin Sans", sans-serif';
 bar6.text.style.fontSize = '2rem';
 
@@ -287,6 +324,12 @@ bar12.text.style.fontSize = '2rem';
 
 bar13.text.style.fontFamily = '"Josefin Sans", sans-serif';
 bar13.text.style.fontSize = '2rem';
+
+bar14.text.style.fontFamily = '"Josefin Sans", sans-serif';
+bar14.text.style.fontSize = '2rem';
+
+bar15.text.style.fontFamily = '"Josefin Sans", sans-serif';
+bar15.text.style.fontSize = '2rem';
 
 var ctx = document.getElementById("myChart"); 
 
