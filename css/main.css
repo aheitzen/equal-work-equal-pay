@@ -706,7 +706,8 @@ div.tooltip {
 }
 
 #cta-one {
-  background-color: var(--main-dark-blue);
+  
+  background: linear-gradient(13deg, var(--main-dark-blue) 70%, var(--main-blue) 10%);
 
 }
 .cta-text-one {
@@ -719,6 +720,52 @@ div.tooltip {
 
 #cta-center {
   height: 100%;
+}
+
+#twenty-three {
+  background-image: url("../images/why_you_care-23.png");
+  height: 100%;
+  width: 100%;
+}
+#twenty-four {
+  background-image: url("../images/why_you_care-24.png");
+  height: 100%;
+  width: 100%;
+}
+#twenty-five {
+  background-image: url("../images/why_you_care-25.png");
+  height: 100%;
+  width: 100%;
+}
+
+#skyline-svg {
+  background: url("../images/Skyline-32.svg");
+  background-repeat: repeat-x;
+  min-width: 1400px;
+  
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear alternate infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 
