@@ -153,7 +153,7 @@ settings4.step = function(state, circle) {
   circle.setText("$" + Math.round(circle.value()* 2343));
 }
 
-  let settings5 = Object.assign({}, settings);
+let settings5 = Object.assign({}, settings);
 settings5.duration = 1400;
 settings5.color = '#ffffff';
 settings5.step = function(state, circle) {
@@ -161,12 +161,28 @@ settings5.step = function(state, circle) {
   circle.setText("$" + Math.round(circle.value()* 1745));
 }
 
- let settings6 = Object.assign({}, settings);
+let settings6 = Object.assign({}, settings);
 settings6.duration = 1800;
 settings6.color = '#ffffff';
 settings6.step = function(state, circle) {
   circle.path.setAttribute('stroke', state.color);
   circle.setText("$" + Math.round(circle.value()* 1745));
+}
+
+let settings7 = Object.assign({}, settings);
+settings7.duration = 1400;
+settings7.color = '#ffffff';
+settings7.step = function(state, circle) {
+  circle.path.setAttribute('stroke', state.color);
+  circle.setText("$" + Math.round(circle.value()* 1670));
+}
+
+let settings8 = Object.assign({}, settings);
+settings8.duration = 1800;
+settings8.color = '#ffffff';
+settings8.step = function(state, circle) {
+  circle.path.setAttribute('stroke', state.color);
+  circle.setText("$" + Math.round(circle.value()* 1670));
 }
 
 let bar6 = new ProgressBar.Circle(containerCircle, settings);
@@ -175,6 +191,8 @@ let bar8 = new ProgressBar.Circle(containerCircle3, settings3);
 let bar9 = new ProgressBar.Circle(containerCircle4, settings4);
 let bar10 = new ProgressBar.Circle(containerCircle5, settings5);
 let bar11 = new ProgressBar.Circle(containerCircle6, settings6);
+let bar12 = new ProgressBar.Circle(containerCircle7, settings7);
+let bar13 = new ProgressBar.Circle(containerCircle8, settings8);
 
 
 let fill6 = 1;
@@ -186,12 +204,17 @@ let fill9 = 0.63;
 let fill10 = 1;
 let fill11 = .66;
 
+let fill12 = 1;
+let fill13 = .69;
+
 bar6.animate(fill6);
 bar7.animate(fill7);
 bar8.animate(fill8);
 bar9.animate(fill9);
 bar10.animate(fill10);
 bar11.animate(fill11);
+bar12.animate(fill12);
+bar13.animate(fill13);
 
 let interval = setInterval(() => {
   if (fill6 === 1) {
@@ -229,6 +252,18 @@ let interval5 = setInterval(() => {
   bar11.animate(fill11);
 }, 4000);
 
+let interval6 = setInterval(() => {
+  if (fill12 === 1) {
+    fill12 = 0;
+    fill13 = 0;
+  } else {
+    fill12 = 1;
+    fill13 = 0.69;
+  }
+  bar12.animate(fill12);
+  bar13.animate(fill13);
+}, 4000);
+
 bar6.text.style.fontFamily = '"Josefin Sans", sans-serif';
 bar6.text.style.fontSize = '2rem';
 
@@ -246,6 +281,12 @@ bar10.text.style.fontSize = '2rem';
 
 bar11.text.style.fontFamily = '"Josefin Sans", sans-serif';
 bar11.text.style.fontSize = '2rem';
+
+bar12.text.style.fontFamily = '"Josefin Sans", sans-serif';
+bar12.text.style.fontSize = '2rem';
+
+bar13.text.style.fontFamily = '"Josefin Sans", sans-serif';
+bar13.text.style.fontSize = '2rem';
 
 var ctx = document.getElementById("myChart"); 
 

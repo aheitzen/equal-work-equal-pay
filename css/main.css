@@ -948,6 +948,20 @@ div.tooltip {
   display: -webkit-inline-box;
 }
 
+#containerCircle7 {
+  margin: 20px;
+  width: 230px;
+  height: 200px;
+  display: -webkit-inline-box;
+}
+
+#containerCircle8 {
+  margin: 20px;
+  width: 230px;
+  height: 200px;
+  display: -webkit-inline-box;
+}
+
 .ocupation-stats-section {
   color: var(--light-pink);
   font-family: 'Fjalla One', sans-serif;
