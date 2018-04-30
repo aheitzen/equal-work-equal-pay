@@ -140,34 +140,58 @@ settings3.color = '#ffffff';
 settings3.from.color = "#2C60A5";
 settings3.to.color = "#152E46";
 settings3.step = function(state, circle) {
-    circle.path.setAttribute('stroke', state.color);
-    circle.setText("$" + Math.round(circle.value()* 2343));
-  }
+  circle.path.setAttribute('stroke', state.color);
+  circle.setText("$" + Math.round(circle.value()* 2343));
+}
 
 
 let settings4 = Object.assign({}, settings);
 settings4.duration = 1800;
 settings4.color = '#ffffff';
 settings4.step = function(state, circle) {
-    circle.path.setAttribute('stroke', state.color);
-    circle.setText("$" + Math.round(circle.value()* 2343));
-  }
+  circle.path.setAttribute('stroke', state.color);
+  circle.setText("$" + Math.round(circle.value()* 2343));
+}
+
+  let settings5 = Object.assign({}, settings);
+settings5.duration = 1400;
+settings5.color = '#ffffff';
+settings5.step = function(state, circle) {
+  circle.path.setAttribute('stroke', state.color);
+  circle.setText("$" + Math.round(circle.value()* 1745));
+}
+
+ let settings6 = Object.assign({}, settings);
+settings6.duration = 1800;
+settings6.color = '#ffffff';
+settings6.step = function(state, circle) {
+  circle.path.setAttribute('stroke', state.color);
+  circle.setText("$" + Math.round(circle.value()* 1745));
+}
 
 let bar6 = new ProgressBar.Circle(containerCircle, settings);
 let bar7 = new ProgressBar.Circle(containerCircle1, settings2);
 let bar8 = new ProgressBar.Circle(containerCircle3, settings3);
 let bar9 = new ProgressBar.Circle(containerCircle4, settings4);
+let bar10 = new ProgressBar.Circle(containerCircle5, settings5);
+let bar11 = new ProgressBar.Circle(containerCircle6, settings6);
+
 
 let fill6 = 1;
 let fill7 = 0.841;
 
 let fill8 = 1;
-let fill9 = 0.60;
+let fill9 = 0.63;
+
+let fill10 = 1;
+let fill11 = .66;
 
 bar6.animate(fill6);
 bar7.animate(fill7);
 bar8.animate(fill8);
 bar9.animate(fill9);
+bar10.animate(fill10);
+bar11.animate(fill11);
 
 let interval = setInterval(() => {
   if (fill6 === 1) {
@@ -187,10 +211,22 @@ let interval2 = setInterval(() => {
     fill9 = 0;
   } else {
     fill8 = 1;
-    fill9 = 0.60;
+    fill9 = 0.63;
   }
   bar8.animate(fill8);
   bar9.animate(fill9);
+}, 4000);
+
+let interval5 = setInterval(() => {
+  if (fill10 === 1) {
+    fill10 = 0;
+    fill11 = 0;
+  } else {
+    fill10 = 1;
+    fill11 = 0.66;
+  }
+  bar10.animate(fill10);
+  bar11.animate(fill11);
 }, 4000);
 
 bar6.text.style.fontFamily = '"Josefin Sans", sans-serif';
@@ -204,6 +240,12 @@ bar8.text.style.fontSize = '2rem';
 
 bar9.text.style.fontFamily = '"Josefin Sans", sans-serif';
 bar9.text.style.fontSize = '2rem';
+
+bar10.text.style.fontFamily = '"Josefin Sans", sans-serif';
+bar10.text.style.fontSize = '2rem';
+
+bar11.text.style.fontFamily = '"Josefin Sans", sans-serif';
+bar11.text.style.fontSize = '2rem';
 
 var ctx = document.getElementById("myChart"); 
 
