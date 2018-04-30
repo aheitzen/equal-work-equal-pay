@@ -558,221 +558,219 @@ var election = new Datamap({
   scope: 'usa',
   element: document.getElementById('map_election'),
   geographyConfig: {
-    highlightBorderColor: '#bada55',
+    highlightBorderColor: 'white',
    popupTemplate: function(geography, data) {
-      return '<div class="hoverinfo">' + geography.properties.name + 'Electoral Votes:' +  data.electoralVotes + ' '
+      return '<div class="hoverinfo">' + geography.properties.name + ' ' + 'National Rank:' +  data.electoralVotes + ' '
     },
     highlightBorderWidth: 3
   },
 
   fills: {
-  'Republican': '#CC4731',
-  'Democrat': '#306596',
-  'Heavy Democrat': '#667FAF',
-  'Light Democrat': '#A9C0DE',
-  'Heavy Republican': '#CA5E5B',
-  'Light Republican': '#EAA9A8',
-  defaultFill: '#EDDC4E'
+  'lowest': '#132c43', //dark blue
+  'middlelow': '#e8bfbc', //pink 
+  'middlehigh': '#2C60A5', //main blue
+  'highest': '#d73038', //red
+  defaultFill: 'white'
 },
 data:{
   "AZ": {
-      "fillKey": "Republican",
-      "electoralVotes": 5
+      "fillKey": "highest",
+      "electoralVotes": 100
   },
   "CO": {
-      "fillKey": "Light Democrat",
+      "fillKey": "highest",
       "electoralVotes": 5
   },
   "DE": {
-      "fillKey": "Democrat",
+      "fillKey": "middlehigh",
       "electoralVotes": 32
   },
   "FL": {
-      "fillKey": "UNDECIDED",
+      "fillKey": "highest",
       "electoralVotes": 29
   },
   "GA": {
-      "fillKey": "Republican",
+      "fillKey": "highest",
       "electoralVotes": 32
   },
   "HI": {
-      "fillKey": "Democrat",
+      "fillKey": "middlehigh",
       "electoralVotes": 32
   },
   "ID": {
-      "fillKey": "Republican",
+      "fillKey": "middlehigh",
       "electoralVotes": 32
   },
   "IL": {
-      "fillKey": "Democrat",
+      "fillKey": "middlelow",
       "electoralVotes": 32
   },
   "IN": {
-      "fillKey": "Republican",
+      "fillKey": "middlehigh",
       "electoralVotes": 11
   },
   "IA": {
-      "fillKey": "Light Democrat",
+      "fillKey": "middlehigh",
       "electoralVotes": 11
   },
   "KS": {
-      "fillKey": "Republican",
+      "fillKey": "middlelow",
       "electoralVotes": 32
   },
   "KY": {
-      "fillKey": "Republican",
+      "fillKey": "middlelow",
       "electoralVotes": 32
   },
   "LA": {
-      "fillKey": "Republican",
+      "fillKey": "lowest",
       "electoralVotes": 32
   },
   "MD": {
-      "fillKey": "Democrat",
+      "fillKey": "highest",
       "electoralVotes": 32
   },
   "ME": {
-      "fillKey": "Democrat",
+      "fillKey": "middlehigh",
       "electoralVotes": 32
   },
   "MA": {
-      "fillKey": "Democrat",
+      "fillKey": "highest",
       "electoralVotes": 32
   },
   "MN": {
-      "fillKey": "Democrat",
+      "fillKey": "highest",
       "electoralVotes": 32
   },
   "MI": {
-      "fillKey": "Democrat",
+      "fillKey": "middlelow",
       "electoralVotes": 32
   },
   "MS": {
-      "fillKey": "Republican",
+      "fillKey": "middlelow",
       "electoralVotes": 32
   },
   "MO": {
-      "fillKey": "Republican",
+      "fillKey": "middlehigh",
       "electoralVotes": 13
   },
   "MT": {
-      "fillKey": "Republican",
+      "fillKey": "middlehigh",
       "electoralVotes": 32
   },
   "NC": {
-      "fillKey": "Light Republican",
+      "fillKey": "highest",
       "electoralVotes": 32
   },
   "NE": {
-      "fillKey": "Republican",
+      "fillKey": "middlehigh",
       "electoralVotes": 32
   },
   "NV": {
-      "fillKey": "Heavy Democrat",
+      "fillKey": "highest",
       "electoralVotes": 32
   },
   "NH": {
-      "fillKey": "Light Democrat",
+      "fillKey": "highest",
       "electoralVotes": 32
   },
   "NJ": {
-      "fillKey": "Democrat",
+      "fillKey": "highest",
       "electoralVotes": 32
   },
   "NY": {
-      "fillKey": "Democrat",
+      "fillKey": "highest",
       "electoralVotes": 32
   },
   "ND": {
-      "fillKey": "Republican",
+      "fillKey": "middlehigh",
       "electoralVotes": 32
   },
   "NM": {
-      "fillKey": "Democrat",
+      "fillKey": "highest",
       "electoralVotes": 32
   },
   "OH": {
-      "fillKey": "UNDECIDED",
+      "fillKey": "middlelow",
       "electoralVotes": 32
   },
   "OK": {
-      "fillKey": "Republican",
+      "fillKey": "middlehigh",
       "electoralVotes": 32
   },
   "OR": {
-      "fillKey": "Democrat",
+      "fillKey": "middlelow",
       "electoralVotes": 32
   },
   "PA": {
-      "fillKey": "Democrat",
+      "fillKey": "middlelow",
       "electoralVotes": 32
   },
   "RI": {
-      "fillKey": "Democrat",
+      "fillKey": "middlehigh",
       "electoralVotes": 32
   },
   "SC": {
-      "fillKey": "Republican",
+      "fillKey": "middlelow",
       "electoralVotes": 32
   },
   "SD": {
-      "fillKey": "Republican",
+      "fillKey": "middlelow",
       "electoralVotes": 32
   },
   "TN": {
-      "fillKey": "Republican",
+      "fillKey": "highest",
       "electoralVotes": 32
   },
   "TX": {
-      "fillKey": "Republican",
+      "fillKey": "middlelow",
       "electoralVotes": 32
   },
   "UT": {
-      "fillKey": "Republican",
+      "fillKey": "middlehigh",
       "electoralVotes": 32
   },
   "WI": {
-      "fillKey": "Democrat",
+      "fillKey": "middlelow",
       "electoralVotes": 32
   },
   "VA": {
-      "fillKey": "Light Democrat",
+      "fillKey": "highest",
       "electoralVotes": 32
   },
   "VT": {
-      "fillKey": "Democrat",
+      "fillKey": "highest",
       "electoralVotes": 32
   },
   "WA": {
-      "fillKey": "Democrat",
+      "fillKey": "middlehigh",
       "electoralVotes": 32
   },
   "WV": {
-      "fillKey": "Republican",
+      "fillKey": "middlehigh",
       "electoralVotes": 32
   },
   "WY": {
-      "fillKey": "Republican",
+      "fillKey": "middlehigh",
       "electoralVotes": 32
   },
   "CA": {
-      "fillKey": "Democrat",
-      "electoralVotes": 32
+      "fillKey": "highest",
+      "electoralVotes": 100
   },
   "CT": {
-      "fillKey": "Democrat",
+      "fillKey": "middlelow",
       "electoralVotes": 32
   },
   "AK": {
-      "fillKey": "Republican",
+      "fillKey": "highest",
       "electoralVotes": 32
   },
   "AR": {
-      "fillKey": "Republican",
+      "fillKey": "middlelow",
       "electoralVotes": 32
   },
   "AL": {
-      "fillKey": "Republican",
+      "fillKey": "middlehigh",
       "electoralVotes": 32
   }
 }
