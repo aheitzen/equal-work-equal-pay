@@ -531,6 +531,9 @@ var myChart = new Chart(ctx, {
         }]
     },
     options: {
+      tooltips: {
+        
+      }
         // scales: {
         //     yAxes: [{
         //         ticks: {
