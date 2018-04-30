@@ -571,6 +571,7 @@ svg.svg-inline--fa.fa-circle.fa-w-16 {
 #group-pacifier {
   height: 100%;
   width: 100%;
+  background-color: var(--main-dark-blue);
   /*background: url("../images/Group.gif");*/
 }
 
