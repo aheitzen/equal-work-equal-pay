@@ -87,6 +87,34 @@ function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
 
+$(document).ready(function (){
+  $("#home-link").click(function (){
+      $('html, body').animate({
+          scrollLeft: $("#title").offset().left
+        }, 1000);
+    });
+  $("a#history-link").click(function (){
+      $('html, body').animate({
+          scrollLeft: $("#history").offset().left()
+        }, 1000);
+    });
+    // $("#movie").click(function (){
+    //   $('html, body').animate({
+    //       scrollLeft: $("#movie-section").offset().top
+    //     }, 1000);
+    // });
+    // $("#contact").click(function (){
+    //   $('html, body').animate({
+    //       scrollLeft: $("#footer").offset().top
+    //     }, 1000);
+    // });
+    // $("#pricing").click(function (){
+    //   $('html, body').animate({
+    //       scrollLeft: $("#pricing-header").offset().top
+    //     }, 1000);
+    // });
+});
+
 var settings = {
   color: '#d02f31',
   trailColor: 'white',
@@ -107,10 +135,23 @@ let settings2 = Object.assign({}, settings);
 settings2.duration = 1800;
 
 let settings3 = Object.assign({}, settings);
-settings3.duration = 3000;
+settings3.duration = 1400;
+settings3.color = '#ffffff';
+settings3.from.color = "#2C60A5";
+settings3.to.color = "#152E46";
+settings3.step = function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.setText("$" + Math.round(circle.value()* 2343));
+  }
+
 
 let settings4 = Object.assign({}, settings);
-settings4.duration = 5000;
+settings4.duration = 1800;
+settings4.color = '#ffffff';
+settings4.step = function(state, circle) {
+    circle.path.setAttribute('stroke', state.color);
+    circle.setText("$" + Math.round(circle.value()* 2343));
+  }
 
 let bar6 = new ProgressBar.Circle(containerCircle, settings);
 let bar7 = new ProgressBar.Circle(containerCircle1, settings2);
@@ -121,7 +162,7 @@ let fill6 = 1;
 let fill7 = 0.841;
 
 let fill8 = 1;
-let fill9 = 0.50;
+let fill9 = 0.60;
 
 bar6.animate(fill6);
 bar7.animate(fill7);
@@ -146,7 +187,7 @@ let interval2 = setInterval(() => {
     fill9 = 0;
   } else {
     fill8 = 1;
-    fill9 = 0.50;
+    fill9 = 0.60;
   }
   bar8.animate(fill8);
   bar9.animate(fill9);
@@ -321,3 +362,4 @@ let interval4 = setInterval(() => {
   bar3.animate(fill3);
   bar4.animate(fill4);
 }, 4000);
+

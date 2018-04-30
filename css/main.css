@@ -924,12 +924,14 @@ div.tooltip {
   margin: 20px;
   width: 230px;
   height: 200px;
+  display: -webkit-inline-box;
 }
 
 #containerCircle4 {
   margin: 20px;
   width: 230px;
   height: 200px;
+  display: -webkit-inline-box;
 }
 .ocupation-stats-section {
   color: var(--light-pink);
@@ -1008,7 +1010,8 @@ div.tooltip {
 .pay-gap-occupations-largest-header {
   text-align: center;
   font-family: 'Fjalla One', sans-serif;
-  color: var(--light-pink);
+/*  color: var(--light-pink);*/
+  color: white;
   font-size: 70px;
 }
 
