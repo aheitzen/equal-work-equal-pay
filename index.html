@@ -22,7 +22,7 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
               <div class="overlay-content">
                 <a class="nav-links" href="#" id="home-link">Home</a>
-                <a class="nav-links" href="#" id="history-link">History</a>
+                <a class="nav-links" id="history-link">History</a>
                 <a class="nav-links" href="#">Stats</a>
                 <a class="nav-links" href="#leaders">Leaders</a>
                 <a class="nav-links" href="#solutions">Solutions</a>
@@ -76,13 +76,7 @@
 </div>
 
  
-    <!-- <div class="container" id="state-map">
-        <div class="row">
-            <div class="cell">
-                
-            </div>
-        </div>
-    </div> -->
+
 
         <!-- <div class="container"> -->
         <div class="container" id="history">
@@ -241,6 +235,15 @@
         <div class="row">
             <div class="col">
                 <img id src="images/Skyline-32.svg">
+            </div>
+        </div>
+    </div>
+    <div class="container" id="state-map">
+        <div class="row">
+            <div class="cell">
+                <div id="chartdiv"></div>   
+                
+                
             </div>
         </div>
     </div>
@@ -529,6 +532,11 @@
 <script type="text/javascript" src="js/semicircle.js"></script>
 <script type="text/javascript" src="js/circle.js"></script>
 <script type="text/javascript" src=""></script> -->
+<script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+<script src="https://www.amcharts.com/lib/3/maps/js/usaLow.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
 <script src="https://d3js.org/d3.v5.min.js"></script>
 <!-- <script type="text/javascript" src="js/jquery.jInvertScroll.min.js"></script> -->
 <script type="text/javascript" src="js/main.js"></script>
