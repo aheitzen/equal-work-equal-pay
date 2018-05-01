@@ -260,18 +260,57 @@ h2.economic {
 
 #lily {
     background-color: #e6bdba;
+    background-image: url("../images/background_lily.png");
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+
     /*padding-bottom: 10vh;*/
-  }
+}
 
 #letitia {
-    background-color:#ce2f31;
+    background-color: #ce2f31;
+    background-image: url("../images/let_back.png");
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
     /*padding-bottom: 10vh;*/
 }
 
 #claudia {
     background-color: #e6bdba;
+    background-image: url("../images/claud_back.png");
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
     /*padding-bottom: 10vh;*/
 }
+
+.cta-text-one {
+    color: white;
+    font-size: 70px;
+    font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    line-height: 80px;
+}
+/*#lily {
+    background-color: #e6bdba;
+
+    
+  }
+
+#letitia {
+    background-color:#ce2f31;
+    
+}
+
+#claudia {
+    background-color: #e6bdba;
+    
+}*/
 
 #lils {
     width: 90%;
@@ -658,7 +697,7 @@ div.tooltip {
 
 
 #cta {
-  background-image: url("../images/cta-background-multi.png");
+  background-image: url("../images/cta-background.png");
   height: 100%;
   width: 100%;
   background-position: center center;
@@ -715,7 +754,7 @@ div.tooltip {
 
 
 .h1.cta {
-  color: white;
+  color: var(--main-dark-blue);
   font-family: 'Fjalla One', sans-serif;
   font-size: 150px;
   text-align: center;
@@ -731,18 +770,30 @@ div.tooltip {
   width: 50%;
 }
 
+.clock {
+  padding-top: 30vh;
+  margin-left: 20vh;
+}
+
+.clippy {
+    height: 500px;
+    transition: 2 sec;
+    -webkit-clip-path: polygon(0% 0%, 56% 2%, 100% 50%, 55% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 56% 2%, 100% 50%, 55% 100%, 0% 100%);
+}
+
 #cta-one {
   
   background: linear-gradient(13deg, var(--main-dark-blue) 70%, var(--main-blue) 10%);
 
 }
-.cta-text-one {
+/*.cta-text-one {
   color: white;
   font-size: 50px;
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
   line-height: 60px;
-}
+}*/
 
 #cta-center {
   height: 100%;
@@ -842,7 +893,7 @@ margin-left:-250px;
 }
 
 #family {
-  background-color: #e8bfbc;
+  background-color: #f1c8c5;
   height: 100%;
   display: flex;
   flex-direction: column;
