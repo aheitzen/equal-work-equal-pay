@@ -83,12 +83,14 @@ $(document).ready(function() {
 
 $(document).ready(function (){
   $("#home-link").click(function (){
-      $('html, body').animate({
+    closeNav();
+      $('section').animate({
           scrollLeft: $("#title").offset().left
         }, 1000);
     });
    $("#history-link").click(function (){
-      $('html, body').animate({
+      closeNav();
+      $('section').animate({
           scrollLeft: $("#history").offset().left
         }, 1000);
     });

@@ -981,10 +981,13 @@ div.tooltip {
   height: 100%;
 }
 
-/*#footer-credits {
-  height: 10%;
+#footer-credits {
+  height: 70px;
   background-color: var(--main-dark-blue);
-}*/
+  position: relative;
+  z-index: 4;
+  /*margin-top: -50px;*/
+}
 
 #containerCircle {
  margin: 20px;
@@ -1246,9 +1249,11 @@ h2.links:hover {
 .footer-header {
   font-family: 'Josefin Sans', sans-serif;
   color: white;
-  text-align: center;
-  margin-top: 5px;
-  margin-left: 30px;
+  /*text-align: center;*/
+  
+  margin-left: 21px;
+  display: inline;
+  
 }
 
 .footer-sub-header {
@@ -1257,23 +1262,33 @@ h2.links:hover {
   text-align: center;
   margin-top: 4px;
   margin-bottom: 8px;
+  display: inline;
+  font-size: 14px;
 }
 
 .footer-amp {
-  text-align: center;
+  /*text-align: center;*/
   color: white;
+  display: inline;
   font-family: 'Josefin Sans', sans-serif;
   margin: 0;
-  margin-left: 10px;
+  /*float: right;*/
+  /*margin-left: 10px;*/
+}
+
+#proud-dev {
+  margin-left: 600px;
+  font-size: 16px;
 }
 
 #alexa {
   margin-top: 0;
-  margin-bottom: 10px;
+  /*margin-bottom: 10px;*/
 }
 
 #crafted-seattle {
   margin-top: 15px;
+  font-size: 16px;
 }
 
 .footer-links:hover {
