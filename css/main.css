@@ -398,6 +398,15 @@ h2.leader-claudia
     line-height: 30px;
 }
 
+.ocupation-sub-header {
+    color: #e6a827;
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    margin-left: 50px;
+    font-size: 100px;
+    margin-left: 105px;
+}
+
 /*END OF HILLARY CODE*/
 
 /*section {
@@ -1110,7 +1119,7 @@ div.tooltip {
   text-transform: uppercase;
 }
 
-.ocupation-sub-header {
+/*.ocupation-sub-header {
   color: #e6a827;
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
@@ -1118,26 +1127,26 @@ div.tooltip {
   font-size: 70px;
   margin-left: 105px;
 }
+*/
+
 
 .radial-graph-header-nurse {
-   color: white;
-  font-family: 'Josefin Sans', sans-serif;
-  text-transform: uppercase;
-  margin-left: 20px;
-  font-size: 20px;
-  /*text-align: center;*/
-   margin-top: 20px;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    margin-left: 15px;
+    font-size: 30px;
+    /* text-align: center; */
+    margin-top: 20px;
 }
 
-#men {
-   color: white;
-  font-family: 'Josefin Sans', sans-serif;
-  text-transform: uppercase;
-  margin-left: 110px;
-  font-size: 20px;
-  /*text-align: center;*/
-   margin-top: 70px;
-
+#men, #women {
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    margin-left: 95px;
+    font-size: 40px;
+    margin-top: 40px;
 }
 
 .radial-graph-sub-header-nurse {
@@ -1214,15 +1223,13 @@ div.tooltip {
 }
 
 .glass-elevator-paragraph-intro {
-  color: white;
-  font-family: 'Fjalla One', sans-serif;
-  font-size: 20px;
-  /*margin-left: 200px;*/
-   margin-left: 110px;
-  margin-right: 150px;
-  white-space: normal;
-  margin-top: 30px;
-
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+    /*margin-left: 200px;*/
+    margin-left: 110px;
+    white-space: normal;
+    margin-top: 30px;
 }
 
 #radial-graphs {
