@@ -32,6 +32,10 @@ section {
   height: 500px;
 }
 
+::-webkit-scrollbar  {
+  display: none;
+}
+
 
 
 /*HILARY'S CODE*/
@@ -982,10 +986,15 @@ div.tooltip {
 }
 
 #footer-credits {
-  height: 70px;
+  /*height: 70px;*/
   background-color: var(--main-dark-blue);
   position: relative;
   z-index: 4;
+      /* height: 70px; */
+    background-color: var(--main-dark-blue);
+    position: relative;
+    z-index: 4;
+    margin-top: -35px;
   /*margin-top: -50px;*/
 }
 
@@ -1006,6 +1015,7 @@ div.tooltip {
   width: 230px;
   height: 200px;
   display: -webkit-inline-box;
+  margin-left: 100px;
 }
 
 #containerCircle4 {
@@ -1020,6 +1030,7 @@ div.tooltip {
   width: 230px;
   height: 200px;
   display: -webkit-inline-box;
+  margin-left: 100px;
 }
 
 #containerCircle6 {
@@ -1034,6 +1045,7 @@ div.tooltip {
   width: 230px;
   height: 200px;
   display: -webkit-inline-box;
+  margin-left: 100px;
 }
 
 #containerCircle8 {
@@ -1048,6 +1060,7 @@ div.tooltip {
   width: 230px;
   height: 200px;
   display: -webkit-inline-box;
+  margin-left: 100px;
 }
 
 #containerCircle10 {
@@ -1055,6 +1068,15 @@ div.tooltip {
   width: 230px;
   height: 200px;
   display: -webkit-inline-box;
+}
+
+.semi-circle-radial-graph {
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  display: inline;
+  font-size: 20px;
+  margin-left: 200px;
+  text-align: center;
 }
 
 .ocupation-stats-section {
@@ -1137,6 +1159,7 @@ div.tooltip {
 /*  color: var(--light-pink);*/
   color: white;
   font-size: 70px;
+  margin-top: 10px;
 }
 #myChart {
       display: block;
@@ -1147,7 +1170,7 @@ div.tooltip {
   text-transform: uppercase;
   font-family: 'Josefin Sans', sans-serif;
   color: #e6a827;
-  font-size: 25px;
+  font-size: 45px;
   text-align: center;
   margin-top: 20px;
 }
@@ -1158,7 +1181,8 @@ div.tooltip {
   color: var(--light-pink);
   font-size: 25px;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 25px;
+  margin-bottom: -20px;
 }
 
 #glass {
@@ -1204,6 +1228,7 @@ h1.resource-header {
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
     line-height: 130px;
+    margin-top: 70px;
 }
 h2.links {
     font-size: 20px;
@@ -1277,7 +1302,7 @@ h2.links:hover {
 }
 
 #proud-dev {
-  margin-left: 600px;
+  margin-left: 650px;
   font-size: 16px;
 }
 

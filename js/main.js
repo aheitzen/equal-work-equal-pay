@@ -160,6 +160,8 @@ settings3.step = function(state, circle) {
 let settings4 = JSON.parse(JSON.stringify(settings));
 settings4.duration = 1800;
 settings4.color = '#ffffff';
+settings4.from.color = "#2C60A5";
+settings4.to.color = "#152E46";
 settings4.step = function(state, circle) {
   circle.path.setAttribute('stroke', state.color);
   circle.setText("$" + Math.round(circle.value()* 2343));
@@ -168,6 +170,8 @@ settings4.step = function(state, circle) {
 let settings5 = JSON.parse(JSON.stringify(settings));
 settings5.duration = 1400;
 settings5.color = '#ffffff';
+settings5.from.color = "#ffffff";
+settings5.to.color = "#F0C6C5";
 settings5.step = function(state, circle) {
   circle.path.setAttribute('stroke', state.color);
   circle.setText("$" + Math.round(circle.value()* 1745));
@@ -176,6 +180,8 @@ settings5.step = function(state, circle) {
 let settings6 = JSON.parse(JSON.stringify(settings));
 settings6.duration = 1800;
 settings6.color = '#ffffff';
+settings6.from.color = "#ffffff";
+settings6.to.color = "#F0C6C5";
 settings6.step = function(state, circle) {
   circle.path.setAttribute('stroke', state.color);
   circle.setText("$" + Math.round(circle.value()* 1745));
@@ -184,8 +190,8 @@ settings6.step = function(state, circle) {
 let settings7 = JSON.parse(JSON.stringify(settings));
 settings7.duration = 1400;
 settings7.color = '#ffffff';
-settings7.from.color = "#F0C6C5";
-settings7.to.color = "#152E46";
+settings7.from.color = "#ffffff";
+settings7.to.color = "#F0C6C5";
 settings7.step = function(state, circle) {
   circle.path.setAttribute('stroke', state.color);
   circle.setText("$" + Math.round(circle.value()* 1670));
@@ -194,6 +200,8 @@ settings7.step = function(state, circle) {
 let settings8 = JSON.parse(JSON.stringify(settings));
 settings8.duration = 1800;
 settings8.color = '#ffffff';
+settings8.from.color = "#ffffff";
+settings8.to.color = "#F0C6C5";
 settings8.step = function(state, circle) {
   circle.path.setAttribute('stroke', state.color);
   circle.setText("$" + Math.round(circle.value()* 1670));
@@ -202,6 +210,8 @@ settings8.step = function(state, circle) {
 let settings9 = JSON.parse(JSON.stringify(settings));
 settings9.duration = 1400;
 settings9.color = '#ffffff';
+settings9.from.color = "#2C60A5";
+settings9.to.color = "#152E46";
 settings9.step = function(state, circle) {
   circle.path.setAttribute('stroke', state.color);
   circle.setText("$" + Math.round(circle.value()* 1331));
@@ -210,6 +220,8 @@ settings9.step = function(state, circle) {
 let settings10 = JSON.parse(JSON.stringify(settings));
 settings10.duration = 1800;
 settings10.color = '#ffffff';
+settings10.from.color = "#2C60A5";
+settings10.to.color = "#152E46";
 settings10.step = function(state, circle) {
   circle.path.setAttribute('stroke', state.color);
   circle.setText("$" + Math.round(circle.value()* 1331));
@@ -345,10 +357,7 @@ bar15.text.style.fontSize = '2rem';
 
 var ctx = document.getElementById("myChart"); 
 
-
-
 // HILARY JS
-
 var bar = new ProgressBar.Line(raceStat, {
   strokeWidth: 20,
   easing: 'easeInOut',
