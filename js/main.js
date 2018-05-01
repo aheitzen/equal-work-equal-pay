@@ -569,38 +569,46 @@ var election = new Datamap({
   scope: 'usa',
   element: document.getElementById('map_election'),
   geographyConfig: {
+    fillOpacity: 1,
     highlightBorderColor: 'white',
+    highlightFillColor: '#2C60A5',
+  
+
    popupTemplate: function(geography, data) {
       // return '<div class="hoverinfo">' + geography.properties.name + ' ' + 'National Rank:' +  data.electoralVotes + '<p> cents: ' + data.cents + '</p></div>'
       return [
         '<div class="hoverinfo">',
+        '<strong>',
         geography.properties.name,
-        ' National Rank:',
+        '<strong>',
+        '<br>',
+
+        ' What a women makes for every $ a man makes: ',
         data.electoralVotes,
-        '<p> cents: ',
-        data.cents,
-        '</p></div>'
+        ' cents ',
+        // data.cents,
+        '</div>'
       ].join('')
     },
     highlightBorderWidth: 3
   },
 
   fills: {
-  'lowest': '#132c43', //dark blue
-  'middlelow': '#e8bfbc', //pink 
-  'middlehigh': '#2C60A5', //main blue
-  'highest': '#d73038', //red
+  'lowest': '#D73038', //dark blue
+  'middlelow': '#D73038', //pink 
+  'middlehigh': '#D73038', //main blue
+  'highest': '#D73038', //red
   defaultFill: 'white'
 },
 data:{
   "AZ": {
       "fillKey": "highest",
-      "electoralVotes": 100,
+      "electoralVotes": 81.8,
       "cents": 90
   },
   "CO": {
       "fillKey": "highest",
-      "electoralVotes": 5
+      "electoralVotes": 84.3
   },
   "DE": {
       "fillKey": "middlehigh",
@@ -608,43 +616,43 @@ data:{
   },
   "FL": {
       "fillKey": "highest",
-      "electoralVotes": 29
+      "electoralVotes": 86.8
   },
   "GA": {
       "fillKey": "highest",
-      "electoralVotes": 32
+      "electoralVotes": 81.9
   },
   "HI": {
       "fillKey": "middlehigh",
-      "electoralVotes": 32
+      "electoralVotes": 83.5
   },
   "ID": {
       "fillKey": "middlehigh",
-      "electoralVotes": 32
+      "electoralVotes": 75.9
   },
   "IL": {
       "fillKey": "middlelow",
-      "electoralVotes": 32
+      "electoralVotes": 79.3
   },
   "IN": {
       "fillKey": "middlehigh",
-      "electoralVotes": 11
+      "electoralVotes": 79.3
   },
   "IA": {
       "fillKey": "middlehigh",
-      "electoralVotes": 11
+      "electoralVotes": 76.5
   },
   "KS": {
       "fillKey": "middlelow",
-      "electoralVotes": 32
+      "electoralVotes": 77.4
   },
   "KY": {
       "fillKey": "middlelow",
-      "electoralVotes": 32
+      "electoralVotes": 79.9
   },
   "LA": {
       "fillKey": "lowest",
-      "electoralVotes": 32
+      "electoralVotes": 69.5
   },
   "MD": {
       "fillKey": "highest",
@@ -652,147 +660,147 @@ data:{
   },
   "ME": {
       "fillKey": "middlehigh",
-      "electoralVotes": 32
+      "electoralVotes": 82.2
   },
   "MA": {
       "fillKey": "highest",
-      "electoralVotes": 32
+      "electoralVotes": 83.6
   },
   "MN": {
       "fillKey": "highest",
-      "electoralVotes": 32
+      "electoralVotes": 83 
   },
   "MI": {
       "fillKey": "middlelow",
-      "electoralVotes": 32
+      "electoralVotes": 75.3
   },
   "MS": {
       "fillKey": "middlelow",
-      "electoralVotes": 32
+      "electoralVotes": 78.5
   },
   "MO": {
       "fillKey": "middlehigh",
-      "electoralVotes": 13
+      "electoralVotes": 78.5
   },
   "MT": {
       "fillKey": "middlehigh",
-      "electoralVotes": 32
+      "electoralVotes": 73.1
   },
   "NC": {
       "fillKey": "highest",
-      "electoralVotes": 32
+      "electoralVotes": 81.9
   },
   "NE": {
       "fillKey": "middlehigh",
-      "electoralVotes": 32
+      "electoralVotes": 77.5
   },
   "NV": {
       "fillKey": "highest",
-      "electoralVotes": 32
+      "electoralVotes": 80.9
   },
   "NH": {
       "fillKey": "highest",
-      "electoralVotes": 32
+      "electoralVotes": 83.1
   },
   "NJ": {
       "fillKey": "highest",
-      "electoralVotes": 32
+      "electoralVotes": 81.2
   },
   "NY": {
       "fillKey": "highest",
-      "electoralVotes": 32
+      "electoralVotes": 89.1
   },
   "ND": {
       "fillKey": "middlehigh",
-      "electoralVotes": 32
+      "electoralVotes": 74.2
   },
   "NM": {
       "fillKey": "highest",
-      "electoralVotes": 32
+      "electoralVotes": 82
   },
   "OH": {
       "fillKey": "middlelow",
-      "electoralVotes": 32
+      "electoralVotes": 77.1
   },
   "OK": {
       "fillKey": "middlehigh",
-      "electoralVotes": 32
+      "electoralVotes": 73.8
   },
   "OR": {
       "fillKey": "middlelow",
-      "electoralVotes": 32
+      "electoralVotes": 79.3
   },
   "PA": {
       "fillKey": "middlelow",
-      "electoralVotes": 32
+      "electoralVotes": 79.3
   },
   "RI": {
       "fillKey": "middlehigh",
-      "electoralVotes": 32
+      "electoralVotes": 81.2
   },
   "SC": {
       "fillKey": "middlelow",
-      "electoralVotes": 32
+      "electoralVotes": 77.8
   },
   "SD": {
       "fillKey": "middlelow",
-      "electoralVotes": 32
+      "electoralVotes": 78.1
   },
   "TN": {
       "fillKey": "highest",
-      "electoralVotes": 32
+      "electoralVotes": 82.3
   },
   "TX": {
       "fillKey": "middlelow",
-      "electoralVotes": 32
+      "electoralVotes": 79.4
   },
   "UT": {
       "fillKey": "middlehigh",
-      "electoralVotes": 32
+      "electoralVotes": 70.5
   },
   "WI": {
       "fillKey": "middlelow",
-      "electoralVotes": 32
+      "electoralVotes": 78.3
   },
   "VA": {
       "fillKey": "highest",
-      "electoralVotes": 32
+      "electoralVotes": 80.3
   },
   "VT": {
       "fillKey": "highest",
-      "electoralVotes": 32
+      "electoralVotes": 86
   },
   "WA": {
       "fillKey": "middlehigh",
-      "electoralVotes": 32
+      "electoralVotes": 76.5
   },
   "WV": {
       "fillKey": "middlehigh",
-      "electoralVotes": 32
+      "electoralVotes": 72.2
   },
   "WY": {
       "fillKey": "middlehigh",
-      "electoralVotes": 32
+      "electoralVotes": 76.8
   },
   "CA": {
       "fillKey": "highest",
-      "electoralVotes": 100
+      "electoralVotes": 88.5
   },
   "CT": {
       "fillKey": "middlelow",
-      "electoralVotes": 32
+      "electoralVotes": 79.4
   },
   "AK": {
       "fillKey": "highest",
-      "electoralVotes": 32
+      "electoralVotes": 84.2
   },
   "AR": {
       "fillKey": "middlelow",
-      "electoralVotes": 32
+      "electoralVotes": 78.5
   },
   "AL": {
       "fillKey": "middlehigh",
-      "electoralVotes": 32
+      "electoralVotes": 74.4
   }
 }
 });
