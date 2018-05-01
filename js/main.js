@@ -88,34 +88,36 @@ $(document).ready(function (){
           scrollLeft: $("#title").offset().left
         }, 1000);
     });
-   $("#history-link").click(function (){
+  $("#history-link").click(function (){
       closeNav();
       $('section').animate({
           scrollLeft: $("#history").offset().left
         }, 1000);
     });
-  // $("a#history-link").click(function (){
-  //     $('html, body').animate({
-  //         scrollLeft: $("#history").offset().left()
-  //         $("#history").scrollLeft( 300 );
-  //       }, 1000);
-  //   });
-
-    // $("#movie").click(function (){
-    //   $('html, body').animate({
-    //       scrollLeft: $("#movie-section").offset().top
-    //     }, 1000);
-    // });
-    // $("#contact").click(function (){
-    //   $('html, body').animate({
-    //       scrollLeft: $("#footer").offset().top
-    //     }, 1000);
-    // });
-    // $("#pricing").click(function (){
-    //   $('html, body').animate({
-    //       scrollLeft: $("#pricing-header").offset().top
-    //     }, 1000);
-    // });
+  $("#stats-link").click(function (){
+      closeNav();
+      $('section').animate({
+          scrollLeft: $("#radial-graphs").offset().left
+        }, 1000);
+    });
+  $("#leaders-link").click(function (){
+      closeNav();
+      $('section').animate({
+          scrollLeft: $("#contemporary-leaders-section").offset().left
+        }, 1000);
+    });
+  $("#solutions-link").click(function (){
+      closeNav();
+      $('section').animate({
+          scrollLeft: $("#solutions").offset().left
+        }, 1000);
+    });
+  $("#resources-link").click(function (){
+      closeNav();
+      $('section').animate({
+          scrollLeft: $("#resources").offset().left
+        }, 1000);
+    });
 });
 
 function openNav() {
