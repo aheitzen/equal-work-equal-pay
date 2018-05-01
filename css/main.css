@@ -764,11 +764,42 @@ div.tooltip {
   width: 100%;
 }
 
+.friends {
+    background-color: #132c43;
+}
+.firstlady {
+     position:absolute;
+    z-index:20;
+    position:absolute
+}
+
+.secondlady {
+     position:absolute;
+/*    margin-left: -1200px;*/
+    z-index:19;
+}
+
+.thirdlady {
+     position:absolute;
+/*    margin-left: -1200px;*/
+    z-index:18;
+}
+
+.fourthlady {
+     position:absolute;
+margin-left:-250px;
+    z-index:17;
+}
+
 #skyline-svg {
   background: url("../images/Skyline-32.svg");
   background-repeat: repeat-x;
   min-width: 1400px;
   
+}
+
+#skyline {
+  margin-top: -40vh;
 }
 
 .path {
