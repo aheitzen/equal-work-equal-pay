@@ -163,8 +163,17 @@ h1#dollar {
     font-size:100px;
     color:white; 
     font-family: 'Fjalla One', sans-serif;
-    text-align: left;
+    text-align: center;
     line-height: 130px
+}
+
+a.cents {
+    transition: all 1s ease-out;
+    font-size: 200px;
+}
+a.cents:hover {
+    font-size: 250px;
+    color:#D73038;
 }
 
 /* why you should care section*/
@@ -465,6 +474,7 @@ video {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: -180px;
 }
 
 .history-header {
@@ -589,9 +599,9 @@ svg.svg-inline--fa.fa-circle.fa-w-16 {
 
 #map_election {
   position: relative;
-  height: 1500px;
+  height: 500px;
   width: 100%;
-  margin-top: ;
+  /*margin-top: ;*/
 }
 
 .sbs-header {
@@ -846,6 +856,8 @@ div.tooltip {
     margin-left: 50px;
     white-space: normal;
     margin-top: 30px;
+    margin-left: 30px;
+
 }
 
 .showText {
