@@ -552,16 +552,10 @@ var myChart = new Chart(ctx, {
         }]
     },
     options: {
-      tooltips: {
-
+      legend: {
+        position: 'bottom'
       }
-        // scales: {
-        //     yAxes: [{
-        //         ticks: {
-        //             beginAtZero:true
-        //         }
-        //     }]
-        // }
+
     }
 });
 

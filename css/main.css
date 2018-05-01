@@ -197,6 +197,7 @@ a.cents:hover {
     padding-top: 10vh;
     background-color:#e6bdba;
     padding-bottom: 10vh;
+    font-size: 16px;
 }
 
 h1.care{
@@ -602,6 +603,7 @@ svg.svg-inline--fa.fa-circle.fa-w-16 {
 
 #state-map {
   background-color: #e6a827;
+  background: linear-gradient(10deg, #e6a827 50%, white 10%)
   /*position: relative;*/
 
 }
@@ -617,7 +619,7 @@ svg.svg-inline--fa.fa-circle.fa-w-16 {
   text-align: center;
     font-family: 'Fjalla One', sans-serif;
   text-transform: uppercase;
-    color: white;
+    color: var(--main-dark-blue);
     font-size: 70px;
 }
 
@@ -859,8 +861,8 @@ div.tooltip {
 
 .h1.h1.line-graph-quote {
   color: var(--main-dark-blue);
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
     text-transform: uppercase;
     margin-left: 50px;
     white-space: normal;
