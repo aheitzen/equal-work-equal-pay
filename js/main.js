@@ -562,7 +562,16 @@ var election = new Datamap({
   geographyConfig: {
     highlightBorderColor: 'white',
    popupTemplate: function(geography, data) {
-      return '<div class="hoverinfo">' + geography.properties.name + ' ' + 'National Rank:' +  data.electoralVotes + ' '
+      // return '<div class="hoverinfo">' + geography.properties.name + ' ' + 'National Rank:' +  data.electoralVotes + '<p> cents: ' + data.cents + '</p></div>'
+      return [
+        '<div class="hoverinfo">',
+        geography.properties.name,
+        ' National Rank:',
+        data.electoralVotes,
+        '<p> cents: ',
+        data.cents,
+        '</p></div>'
+      ].join('')
     },
     highlightBorderWidth: 3
   },
@@ -577,7 +586,8 @@ var election = new Datamap({
 data:{
   "AZ": {
       "fillKey": "highest",
-      "electoralVotes": 100
+      "electoralVotes": 100,
+      "cents": 90
   },
   "CO": {
       "fillKey": "highest",
