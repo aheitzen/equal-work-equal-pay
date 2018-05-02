@@ -503,33 +503,33 @@ var ctx = document.getElementById("myChart").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ["Recreation", "Desingers", "Biologist"],
+        labels: ["Recreation", "Design", "Biology"],
         datasets: [{
-            label: 'Before female dominated',
+            label: 'Salary trends without women',
             data: [53, 84, 67],
             backgroundColor: [
-                'rgba(21, 46, 70, 0.7)',
-                'rgba(21, 46, 70, 0.7)',
-                'rgba(21, 46, 70, 0.7)'
+                '#e6a827',
+                '#e6a827',
+                '#e6a827'
             ],
             borderColor: [
-                'rgb(21, 46, 70)',
-                'rgb(21, 46, 70)',
-                'rgb(21, 46, 70)'
+                '#e6a827',
+                '#e6a827',
+                '#e6a827'
             ],
             borderWidth: 2
         },{
-            label: 'After female dominated',
+            label: 'Salary trends with women',
             data: [24, 56, 55],
             backgroundColor: [
-                'rgba(44, 96, 165, 0.7)',
-                'rgba(44, 96, 165, 0.7)',
-                'rgba(44, 96, 165, 0.7)'
+                '#D73038',
+                '#D73038',
+                '#D73038'
             ],
             borderColor: [
-                'rgb(44, 96, 165)',
-                'rgb(44, 96, 165)',
-                'rgb(44, 96, 165)'
+                '#D73038',
+                '#D73038',
+                '#D73038'
             ],
             borderWidth: 2
         }]
