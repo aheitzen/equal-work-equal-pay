@@ -79,8 +79,6 @@ $(document).ready(function() {
 );
 });
 
-
-
 $(document).ready(function (){
   $("#home-link").click(function (){
     closeNav();
@@ -128,7 +126,6 @@ function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
 
-
 var settings = {
   color: '#d02f31',
   trailColor: 'white',
@@ -138,7 +135,6 @@ var settings = {
   strokeWidth: 6,
   from: {color: '#d02f31', a:0},
   to: {color: '#e6a827', a:1},
-  // Set default step function for all animate calls
   step: function(state, circle) {
     circle.path.setAttribute('stroke', state.color);
     circle.setText("$" + Math.round(circle.value()* 61) + "k");
@@ -162,6 +158,8 @@ settings3.step = function(state, circle) {
 let settings4 = JSON.parse(JSON.stringify(settings));
 settings4.duration = 1800;
 settings4.color = '#ffffff';
+settings4.from.color = "#2C60A5";
+settings4.to.color = "#152E46";
 settings4.step = function(state, circle) {
   circle.path.setAttribute('stroke', state.color);
   circle.setText("$" + Math.round(circle.value()* 2343));
@@ -170,6 +168,8 @@ settings4.step = function(state, circle) {
 let settings5 = JSON.parse(JSON.stringify(settings));
 settings5.duration = 1400;
 settings5.color = '#ffffff';
+settings5.from.color = "#ffffff";
+settings5.to.color = "#F0C6C5";
 settings5.step = function(state, circle) {
   circle.path.setAttribute('stroke', state.color);
   circle.setText("$" + Math.round(circle.value()* 1745));
@@ -178,6 +178,8 @@ settings5.step = function(state, circle) {
 let settings6 = JSON.parse(JSON.stringify(settings));
 settings6.duration = 1800;
 settings6.color = '#ffffff';
+settings6.from.color = "#ffffff";
+settings6.to.color = "#F0C6C5";
 settings6.step = function(state, circle) {
   circle.path.setAttribute('stroke', state.color);
   circle.setText("$" + Math.round(circle.value()* 1745));
@@ -186,8 +188,8 @@ settings6.step = function(state, circle) {
 let settings7 = JSON.parse(JSON.stringify(settings));
 settings7.duration = 1400;
 settings7.color = '#ffffff';
-settings7.from.color = "#F0C6C5";
-settings7.to.color = "#152E46";
+settings7.from.color = "#ffffff";
+settings7.to.color = "#F0C6C5";
 settings7.step = function(state, circle) {
   circle.path.setAttribute('stroke', state.color);
   circle.setText("$" + Math.round(circle.value()* 1670));
@@ -196,6 +198,8 @@ settings7.step = function(state, circle) {
 let settings8 = JSON.parse(JSON.stringify(settings));
 settings8.duration = 1800;
 settings8.color = '#ffffff';
+settings8.from.color = "#ffffff";
+settings8.to.color = "#F0C6C5";
 settings8.step = function(state, circle) {
   circle.path.setAttribute('stroke', state.color);
   circle.setText("$" + Math.round(circle.value()* 1670));
@@ -204,6 +208,8 @@ settings8.step = function(state, circle) {
 let settings9 = JSON.parse(JSON.stringify(settings));
 settings9.duration = 1400;
 settings9.color = '#ffffff';
+settings9.from.color = "#2C60A5";
+settings9.to.color = "#152E46";
 settings9.step = function(state, circle) {
   circle.path.setAttribute('stroke', state.color);
   circle.setText("$" + Math.round(circle.value()* 1331));
@@ -212,6 +218,8 @@ settings9.step = function(state, circle) {
 let settings10 = JSON.parse(JSON.stringify(settings));
 settings10.duration = 1800;
 settings10.color = '#ffffff';
+settings10.from.color = "#2C60A5";
+settings10.to.color = "#152E46";
 settings10.step = function(state, circle) {
   circle.path.setAttribute('stroke', state.color);
   circle.setText("$" + Math.round(circle.value()* 1331));
@@ -347,10 +355,7 @@ bar15.text.style.fontSize = '2rem';
 
 var ctx = document.getElementById("myChart"); 
 
-
-
 // HILARY JS
-
 var bar = new ProgressBar.Line(raceStat, {
   strokeWidth: 20,
   easing: 'easeInOut',
@@ -361,8 +366,6 @@ var bar = new ProgressBar.Line(raceStat, {
   svgStyle: {width: '100%', height: '100%'},
   text: {
     style: {
-      // Text color.
-      // Default: same as stroke color (options.color)
       color: 'white',
       position: 'absolute',
       right: '0',
@@ -383,7 +386,6 @@ var bar = new ProgressBar.Line(raceStat, {
 let fill = 1;
 bar.animate(1.0);  
 
-
 //bar 2//
 var bar2 = new ProgressBar.Line(raceStat2, {
   strokeWidth: 20,
@@ -395,8 +397,6 @@ var bar2 = new ProgressBar.Line(raceStat2, {
   svgStyle: {width: '100%', height: '100%'},
   text: {
     style: {
-      // Text color.
-      // Default: same as stroke color (options.color)
       color: 'white',
       position: 'absolute',
       right: '0',
@@ -439,8 +439,6 @@ var bar3 = new ProgressBar.Line(raceStat3, {
   svgStyle: {width: '100%', height: '100%'},
   text: {
     style: {
-      // Text color.
-      // Default: same as stroke color (options.color)
       color: 'white',
       position: 'absolute',
       right: '0',
@@ -458,7 +456,7 @@ var bar3 = new ProgressBar.Line(raceStat3, {
   }
 });
 fill3 = 1;
-bar3.animate (1.0);  // Number from 0.0 to 1.0
+bar3.animate (1.0);  
 //bar 4//
 var bar4 = new ProgressBar.Line(raceStat4, {
   strokeWidth: 20,
@@ -470,8 +468,6 @@ var bar4 = new ProgressBar.Line(raceStat4, {
   svgStyle: {width: '100%', height: '100%'},
   text: {
     style: {
-      // Text color.
-      // Default: same as stroke color (options.color)
       color: 'white',
       position: 'absolute',
       right: '0',
@@ -489,7 +485,7 @@ var bar4 = new ProgressBar.Line(raceStat4, {
   }
 });
 let fill4 = .64;
-bar4.animate (fill4);  // Number from 0.0 to 1.0
+bar4.animate (fill4);  
 
 let interval4 = setInterval(() => {
   if (fill3 === 1) {
@@ -507,54 +503,42 @@ var ctx = document.getElementById("myChart").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ["Recreation", "Desingers", "Biologist"],
+        labels: ["Recreation", "Design", "Biology"],
         datasets: [{
-            label: 'Before female dominated',
-            // data: [53 + "k", 84 + "k", 67 + "k"],
+            label: 'Salary trends without women',
             data: [53, 84, 67],
             backgroundColor: [
-                'rgba(21, 46, 70, 0.7)',
-                'rgba(21, 46, 70, 0.7)',
-                'rgba(21, 46, 70, 0.7)'
-                
-                // 'rgba(255, 99, 132, 0.2)',
-                // 'rgba(255, 99, 132, 0.2)'
+                '#e6a827',
+                '#e6a827',
+                '#e6a827'
             ],
             borderColor: [
-                'rgb(21, 46, 70)',
-                'rgb(21, 46, 70)',
-                'rgb(21, 46, 70)'
-                // 'rgba(255,99,132,1)',
-                // 'rgba(255,99,132,1)'
+                '#e6a827',
+                '#e6a827',
+                '#e6a827'
             ],
             borderWidth: 2
         },{
-            label: 'After female dominated',
+            label: 'Salary trends with women',
             data: [24, 56, 55],
             backgroundColor: [
-                'rgba(44, 96, 165, 0.7)',
-                'rgba(44, 96, 165, 0.7)',
-                'rgba(44, 96, 165, 0.7)'
+                '#D73038',
+                '#D73038',
+                '#D73038'
             ],
             borderColor: [
-                'rgb(44, 96, 165)',
-                'rgb(44, 96, 165)',
-                'rgb(44, 96, 165)'
+                '#D73038',
+                '#D73038',
+                '#D73038'
             ],
             borderWidth: 2
         }]
     },
     options: {
-      tooltips: {
-
+      legend: {
+        position: 'bottom'
       }
-        // scales: {
-        //     yAxes: [{
-        //         ticks: {
-        //             beginAtZero:true
-        //         }
-        //     }]
-        // }
+
     }
 });
 
@@ -562,38 +546,44 @@ var election = new Datamap({
   scope: 'usa',
   element: document.getElementById('map_election'),
   geographyConfig: {
+    fillOpacity: 1,
     highlightBorderColor: 'white',
+    highlightFillColor: '#2C60A5',
+  
+
    popupTemplate: function(geography, data) {
-      // return '<div class="hoverinfo">' + geography.properties.name + ' ' + 'National Rank:' +  data.electoralVotes + '<p> cents: ' + data.cents + '</p></div>'
       return [
         '<div class="hoverinfo">',
+        '<strong>',
         geography.properties.name,
-        ' National Rank:',
+        '<strong>',
+        '<br>',
+
+        ' What a women makes for every $ a man makes: ',
         data.electoralVotes,
-        '<p> cents: ',
-        data.cents,
-        '</p></div>'
+        ' cents ',
+        '</div>'
       ].join('')
     },
     highlightBorderWidth: 3
   },
 
   fills: {
-  'lowest': '#132c43', //dark blue
-  'middlelow': '#e8bfbc', //pink 
-  'middlehigh': '#2C60A5', //main blue
-  'highest': '#d73038', //red
+  'lowest': '#D73038', 
+  'middlelow': '#D73038', 
+  'middlehigh': '#D73038', 
+  'highest': '#D73038', 
   defaultFill: 'white'
 },
 data:{
   "AZ": {
       "fillKey": "highest",
-      "electoralVotes": 100,
+      "electoralVotes": 81.8,
       "cents": 90
   },
   "CO": {
       "fillKey": "highest",
-      "electoralVotes": 5
+      "electoralVotes": 84.3
   },
   "DE": {
       "fillKey": "middlehigh",
@@ -601,43 +591,43 @@ data:{
   },
   "FL": {
       "fillKey": "highest",
-      "electoralVotes": 29
+      "electoralVotes": 86.8
   },
   "GA": {
       "fillKey": "highest",
-      "electoralVotes": 32
+      "electoralVotes": 81.9
   },
   "HI": {
       "fillKey": "middlehigh",
-      "electoralVotes": 32
+      "electoralVotes": 83.5
   },
   "ID": {
       "fillKey": "middlehigh",
-      "electoralVotes": 32
+      "electoralVotes": 75.9
   },
   "IL": {
       "fillKey": "middlelow",
-      "electoralVotes": 32
+      "electoralVotes": 79.3
   },
   "IN": {
       "fillKey": "middlehigh",
-      "electoralVotes": 11
+      "electoralVotes": 79.3
   },
   "IA": {
       "fillKey": "middlehigh",
-      "electoralVotes": 11
+      "electoralVotes": 76.5
   },
   "KS": {
       "fillKey": "middlelow",
-      "electoralVotes": 32
+      "electoralVotes": 77.4
   },
   "KY": {
       "fillKey": "middlelow",
-      "electoralVotes": 32
+      "electoralVotes": 79.9
   },
   "LA": {
       "fillKey": "lowest",
-      "electoralVotes": 32
+      "electoralVotes": 69.5
   },
   "MD": {
       "fillKey": "highest",
@@ -645,147 +635,147 @@ data:{
   },
   "ME": {
       "fillKey": "middlehigh",
-      "electoralVotes": 32
+      "electoralVotes": 82.2
   },
   "MA": {
       "fillKey": "highest",
-      "electoralVotes": 32
+      "electoralVotes": 83.6
   },
   "MN": {
       "fillKey": "highest",
-      "electoralVotes": 32
+      "electoralVotes": 83 
   },
   "MI": {
       "fillKey": "middlelow",
-      "electoralVotes": 32
+      "electoralVotes": 75.3
   },
   "MS": {
       "fillKey": "middlelow",
-      "electoralVotes": 32
+      "electoralVotes": 78.5
   },
   "MO": {
       "fillKey": "middlehigh",
-      "electoralVotes": 13
+      "electoralVotes": 78.5
   },
   "MT": {
       "fillKey": "middlehigh",
-      "electoralVotes": 32
+      "electoralVotes": 73.1
   },
   "NC": {
       "fillKey": "highest",
-      "electoralVotes": 32
+      "electoralVotes": 81.9
   },
   "NE": {
       "fillKey": "middlehigh",
-      "electoralVotes": 32
+      "electoralVotes": 77.5
   },
   "NV": {
       "fillKey": "highest",
-      "electoralVotes": 32
+      "electoralVotes": 80.9
   },
   "NH": {
       "fillKey": "highest",
-      "electoralVotes": 32
+      "electoralVotes": 83.1
   },
   "NJ": {
       "fillKey": "highest",
-      "electoralVotes": 32
+      "electoralVotes": 81.2
   },
   "NY": {
       "fillKey": "highest",
-      "electoralVotes": 32
+      "electoralVotes": 89.1
   },
   "ND": {
       "fillKey": "middlehigh",
-      "electoralVotes": 32
+      "electoralVotes": 74.2
   },
   "NM": {
       "fillKey": "highest",
-      "electoralVotes": 32
+      "electoralVotes": 82
   },
   "OH": {
       "fillKey": "middlelow",
-      "electoralVotes": 32
+      "electoralVotes": 77.1
   },
   "OK": {
       "fillKey": "middlehigh",
-      "electoralVotes": 32
+      "electoralVotes": 73.8
   },
   "OR": {
       "fillKey": "middlelow",
-      "electoralVotes": 32
+      "electoralVotes": 79.3
   },
   "PA": {
       "fillKey": "middlelow",
-      "electoralVotes": 32
+      "electoralVotes": 79.3
   },
   "RI": {
       "fillKey": "middlehigh",
-      "electoralVotes": 32
+      "electoralVotes": 81.2
   },
   "SC": {
       "fillKey": "middlelow",
-      "electoralVotes": 32
+      "electoralVotes": 77.8
   },
   "SD": {
       "fillKey": "middlelow",
-      "electoralVotes": 32
+      "electoralVotes": 78.1
   },
   "TN": {
       "fillKey": "highest",
-      "electoralVotes": 32
+      "electoralVotes": 82.3
   },
   "TX": {
       "fillKey": "middlelow",
-      "electoralVotes": 32
+      "electoralVotes": 79.4
   },
   "UT": {
       "fillKey": "middlehigh",
-      "electoralVotes": 32
+      "electoralVotes": 70.5
   },
   "WI": {
       "fillKey": "middlelow",
-      "electoralVotes": 32
+      "electoralVotes": 78.3
   },
   "VA": {
       "fillKey": "highest",
-      "electoralVotes": 32
+      "electoralVotes": 80.3
   },
   "VT": {
       "fillKey": "highest",
-      "electoralVotes": 32
+      "electoralVotes": 86
   },
   "WA": {
       "fillKey": "middlehigh",
-      "electoralVotes": 32
+      "electoralVotes": 76.5
   },
   "WV": {
       "fillKey": "middlehigh",
-      "electoralVotes": 32
+      "electoralVotes": 72.2
   },
   "WY": {
       "fillKey": "middlehigh",
-      "electoralVotes": 32
+      "electoralVotes": 76.8
   },
   "CA": {
       "fillKey": "highest",
-      "electoralVotes": 100
+      "electoralVotes": 88.5
   },
   "CT": {
       "fillKey": "middlelow",
-      "electoralVotes": 32
+      "electoralVotes": 79.4
   },
   "AK": {
       "fillKey": "highest",
-      "electoralVotes": 32
+      "electoralVotes": 84.2
   },
   "AR": {
       "fillKey": "middlelow",
-      "electoralVotes": 32
+      "electoralVotes": 78.5
   },
   "AL": {
       "fillKey": "middlehigh",
-      "electoralVotes": 32
+      "electoralVotes": 74.4
   }
 }
 });
