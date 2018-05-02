@@ -126,7 +126,6 @@ function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
 
-
 var settings = {
   color: '#d02f31',
   trailColor: 'white',
@@ -136,7 +135,6 @@ var settings = {
   strokeWidth: 6,
   from: {color: '#d02f31', a:0},
   to: {color: '#e6a827', a:1},
-  // Set default step function for all animate calls
   step: function(state, circle) {
     circle.path.setAttribute('stroke', state.color);
     circle.setText("$" + Math.round(circle.value()* 61) + "k");
@@ -368,8 +366,6 @@ var bar = new ProgressBar.Line(raceStat, {
   svgStyle: {width: '100%', height: '100%'},
   text: {
     style: {
-      // Text color.
-      // Default: same as stroke color (options.color)
       color: 'white',
       position: 'absolute',
       right: '0',
@@ -390,7 +386,6 @@ var bar = new ProgressBar.Line(raceStat, {
 let fill = 1;
 bar.animate(1.0);  
 
-
 //bar 2//
 var bar2 = new ProgressBar.Line(raceStat2, {
   strokeWidth: 20,
@@ -402,8 +397,6 @@ var bar2 = new ProgressBar.Line(raceStat2, {
   svgStyle: {width: '100%', height: '100%'},
   text: {
     style: {
-      // Text color.
-      // Default: same as stroke color (options.color)
       color: 'white',
       position: 'absolute',
       right: '0',
@@ -446,8 +439,6 @@ var bar3 = new ProgressBar.Line(raceStat3, {
   svgStyle: {width: '100%', height: '100%'},
   text: {
     style: {
-      // Text color.
-      // Default: same as stroke color (options.color)
       color: 'white',
       position: 'absolute',
       right: '0',
@@ -465,7 +456,7 @@ var bar3 = new ProgressBar.Line(raceStat3, {
   }
 });
 fill3 = 1;
-bar3.animate (1.0);  // Number from 0.0 to 1.0
+bar3.animate (1.0);  
 //bar 4//
 var bar4 = new ProgressBar.Line(raceStat4, {
   strokeWidth: 20,
@@ -477,8 +468,6 @@ var bar4 = new ProgressBar.Line(raceStat4, {
   svgStyle: {width: '100%', height: '100%'},
   text: {
     style: {
-      // Text color.
-      // Default: same as stroke color (options.color)
       color: 'white',
       position: 'absolute',
       right: '0',
@@ -496,7 +485,7 @@ var bar4 = new ProgressBar.Line(raceStat4, {
   }
 });
 let fill4 = .64;
-bar4.animate (fill4);  // Number from 0.0 to 1.0
+bar4.animate (fill4);  
 
 let interval4 = setInterval(() => {
   if (fill3 === 1) {
@@ -517,22 +506,16 @@ var myChart = new Chart(ctx, {
         labels: ["Recreation", "Desingers", "Biologist"],
         datasets: [{
             label: 'Before female dominated',
-            // data: [53 + "k", 84 + "k", 67 + "k"],
             data: [53, 84, 67],
             backgroundColor: [
                 'rgba(21, 46, 70, 0.7)',
                 'rgba(21, 46, 70, 0.7)',
                 'rgba(21, 46, 70, 0.7)'
-                
-                // 'rgba(255, 99, 132, 0.2)',
-                // 'rgba(255, 99, 132, 0.2)'
             ],
             borderColor: [
                 'rgb(21, 46, 70)',
                 'rgb(21, 46, 70)',
                 'rgb(21, 46, 70)'
-                // 'rgba(255,99,132,1)',
-                // 'rgba(255,99,132,1)'
             ],
             borderWidth: 2
         },{
@@ -569,7 +552,6 @@ var election = new Datamap({
   
 
    popupTemplate: function(geography, data) {
-      // return '<div class="hoverinfo">' + geography.properties.name + ' ' + 'National Rank:' +  data.electoralVotes + '<p> cents: ' + data.cents + '</p></div>'
       return [
         '<div class="hoverinfo">',
         '<strong>',
@@ -580,7 +562,6 @@ var election = new Datamap({
         ' What a women makes for every $ a man makes: ',
         data.electoralVotes,
         ' cents ',
-        // data.cents,
         '</div>'
       ].join('')
     },
@@ -588,10 +569,10 @@ var election = new Datamap({
   },
 
   fills: {
-  'lowest': '#D73038', //dark blue
-  'middlelow': '#D73038', //pink 
-  'middlehigh': '#D73038', //main blue
-  'highest': '#D73038', //red
+  'lowest': '#D73038', 
+  'middlelow': '#D73038', 
+  'middlehigh': '#D73038', 
+  'highest': '#D73038', 
   defaultFill: 'white'
 },
 data:{
